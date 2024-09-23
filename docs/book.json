@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    "chapter-fold",
+    "sidebar-style",
+    "code",
+    "github"
+  ],
+  "pluginsConfig": {
+    "sidebar-style": {
+      "title": "MC草原探险wiki",
+      "author": "云霜"
+    },
+    "code": {
+      "lineNumbers": true,
+      "copyButtons": true
+    },
+    "github": {
+      "url": "https://github.com/yunshuangqwq/minecraftcaoyuantanxianwiki"
+    }
+  }
+}

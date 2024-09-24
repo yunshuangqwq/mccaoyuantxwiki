@@ -21,6 +21,6 @@
 
 ### 未绑定邮箱，请联系管理员找回密码
 如果您未绑定邮箱，则需要[加入官方群](https://qun.ypshidifu.cn/)联系管理员进行处置，为了防止他人冒充，我们会向您加入官方群QQ发送一封邮件，该邮件包含您的新密码，为了您的账号安全``请勿将密码邮件转发给他人或将邮件截图发至群内。``
-同时，我们仅有两个官方电子邮件地址：[mc@ypshidifu.cn](mailto:mc@ypshidifu.cn)和[Caoyuanserver@126.com](mailto:Caoyuanserver@126.com)，其他任何电子邮件地址，均为冒充！
+同时，我们仅有两个官方电子邮件地址：[1@ypshidifu.cn](mailto:1@ypshidifu.cn)和[Caoyuanserver@126.com](mailto:Caoyuanserver@126.com)，其他任何电子邮件地址，均为冒充！
 
 

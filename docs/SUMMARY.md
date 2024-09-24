@@ -1,6 +1,6 @@
 # caoyuanserver
 
-* [官网](guanwang.md)
+* [官网](wikis/play.md)
 *  [前言](README.md)
 * [提交文档给我们](wikis/help.md)
 * [注册和登陆](wikis/login.md)

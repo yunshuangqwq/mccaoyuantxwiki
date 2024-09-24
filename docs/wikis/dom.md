@@ -1,5 +1,5 @@
 # 领地系统操作指南
-### 作者：youpaishidifu
+### 本文作者：youpaishidifu
 ## menu:
 ### 1.领地系统介绍
 ### 2.领地系统操作

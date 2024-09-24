@@ -1,4 +1,4 @@
-# 草原探险服务器官方文档
+# caoyuanserver
 
 * [官网](guanwang.md)
 *  [前言](README.md)

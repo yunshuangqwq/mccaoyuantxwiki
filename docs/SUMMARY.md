@@ -10,3 +10,5 @@
 * [游戏商人和转账的操作](wikis/shop.md)
 * [如何处理作弊者](wikis/kick.md)
 * [充值游戏币](wikis/cz.md)
+* [游戏内控制台使用](wikis/console.md)
+* [小黑塔使用](wikis/end.md)

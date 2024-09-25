@@ -1,4 +1,4 @@
-# Summary
+# menu
 
 * [官网](wikis/play.md)
 * [前言](README.md)
@@ -9,3 +9,4 @@
 * [皮肤更新](wikis/skin.md)
 * [游戏商人和转账的操作](wikis/shop.md)
 * [如何处理作弊者](wikis/kick.md)
+* [充值游戏币](wikis/cz.md)

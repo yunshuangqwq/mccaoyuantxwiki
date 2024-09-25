@@ -50,6 +50,8 @@
 打开Miecraft官网，点击`登录`，点击`我的游戏`，选择`minecraft java`版，点击`向下的小箭头`，点击`更改皮肤`，选择模型后，往下滑，选择`经典或滑头`，并上传皮肤文件即可
 ### 2.1 注意事项
 我的世界中国版(即网易我的世界)尝试节流国际版玩家，如果是中文提示，则点击`继续留在Minecraft.net`，如果是英文则点击`stay on minecraft.net`，稍不留神就会跳转到我的世界中国版(即网易我的世界)
+![](https://openai-75050.gzc.vod.tencent-cloud.com/openaiassets_116bfd5caabf5efb465c1e3ee37800f8_2579861727231959494.png)
+![](https://openai-75050.gzc.vod.tencent-cloud.com/openaiassets_23facb9ff0c8f1b2e0c413eefae96c63_2579861727231966790.png)
 
 
 ### 3. 使用指令更新皮肤

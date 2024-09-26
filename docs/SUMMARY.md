@@ -12,3 +12,4 @@
 * [充值游戏币](wikis/cz.md)
 * [游戏内控制台使用](wikis/console.md)
 * [小黑塔使用](wikis/end.md)
+* [袭击塔的使用](wikis/bad.md)

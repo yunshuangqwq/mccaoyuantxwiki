@@ -26,17 +26,20 @@
 | 缩小  | -| 9.8 | 2X2X2
 | 删除 | - | 9.8 | 2X2X2
 
-### 3.领地信息
-您可以在领地内，执行指令'/dom info'查看领地信息(含领地位置X、Y、Z坐标)、领地主。
+## 3.领地信息
+您可以在领地内，执行指令`/dom info`查看领地信息(含领地位置X、Y、Z坐标)、领地主。
 ### 3.1领地传送
-您可以在领地内，执行指令'/dom tp 名字'，即可传送到领地内。
-### 4.领地设置
-聊天框输入指令'/dom'，打开菜单，随后点击'成员管理'添加玩家为您的领地成员，并给其配置对应的权限，点击‘设置传送点’，将您所站的位置设置为领地传送的地点，点击'访客权限'可以为所有过路的玩家设置权限，点击'环境设置'可以设置是否允许破坏农作物、显示/隐藏领地边界等信息
+您可以在领地内，执行指令`/dom tp 名字，即可传送到领地内。
+## 4.领地设置
+聊天框输入指令`/dom`，打开菜单，随后点击`成员管理`添加玩家为您的领地成员，并给其配置对应的权限，点击‘设置传送点’，将您所站的位置设置为领地传送的地点，点击`访客权限`可以为所有过路的玩家设置权限，点击`环境设置`可以设置是否允许破坏农作物、显示/隐藏领地边界等信息
 ![dom](https://img.yunr.us.kg/api/cfile/AgACAgUAAyEGAASO2xA4AAMLZvJ2b6mGl4TZydNpoUtx1O6ZqyUAAqzAMRuUYZBXJXfRixT4IXcBAAMCAAN4AAM2BA)
 
 ![dom-3](https://img.yunr.us.kg/api/cfile/AgACAgUAAyEGAASO2xA4AAMMZvJ2dNDLowABYvJP2nDsMcY_HPMYAAKtwDEblGGQV2hbcMP5FeE7AQADAgADeAADNgQ)
 
 ![](https://img.yunr.us.kg/api/cfile/AgACAgUAAyEGAASO2xA4AAMNZvJ2efrxHiHUZfocbq7M0uHckL4AAq7AMRuUYZBXy7I7BfajResBAAMCAAN4AAM2BA)
 
-### 5.领地转让
-输入指令'/dom give 领地名 受让玩家名字 force'即可完成转让，**请谨慎执行该操作，该操作不可撤销！**
+## 5.领地转让
+输入指令`/dom give 领地名 受让玩家名字 force`即可完成转让，**请谨慎执行该操作，该操作不可撤销！**
+
+## 6. 删除领地
+输入指令`/dom delete 领地名 force`即可删除领地，**请谨慎执行该操作，该操作不可撤销！**

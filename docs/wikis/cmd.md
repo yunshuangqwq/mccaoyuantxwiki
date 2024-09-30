@@ -34,7 +34,7 @@
 ### 1.绑定邮箱
 `/bindemail [邮箱] [密码]`
 ### 2.重置密码
-`resetpassword forget`
+`resetpassword forget`<br>
 `resetpassword re [验证码] [新密码]`
 ### 3.修改密码
 `/changepassword [旧密码] [新密码] [确认新密码]`

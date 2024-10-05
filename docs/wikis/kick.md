@@ -32,7 +32,7 @@
 
 ## 玩家举报
 ### 匿名举报
-发送邮件到[Caoyuanserver@126.com](mailto:Caoyuanserver@126.com)，附上您的证据视频、图片、玩家姓名、作弊类型
+发送邮件到[mc@ypshidifu.cn](mailto:mc@ypshidifu.cn)，附上您的证据视频、图片、玩家姓名、作弊类型
 ### 公开举报
 直接将视频、图片证据材料发送至[官方群](https://qun.ypshidifu.cn/)并@管理
 ## 举报有奖

@@ -2,6 +2,8 @@
 
 * [前言](README.md)
 * [官网](https://play.ypshidifu.cn)
+* [萌新们如何下载加入服务器](https://bbs.ypshidifu.cn/index.php?threads/cao-yuan-tan-xian-fu-wu-qi-chun-meng-xin-men-ru-he-zheng-que-jia-ru-fu-wu-qi.17/#post-19
+)
 * [联系我们](wikis/lianxi.md)
 * [提交文档给我们](wikis/help.md)
 * [注册和登陆](wikis/login.md)

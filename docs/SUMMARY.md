@@ -1,8 +1,8 @@
 # menu
 
-* [官网](https://play.ypshidifu.cn)
-* [前言](README.md)
+* [官网](wikis/play.md)
 * [用户协议](wikis/player.md)
+* [前言](README.md)
 * [提交文档给我们](wikis/help.md)
 * [注册和登陆](wikis/login.md)
 * [领地保护](wikis/dom.md)
@@ -17,3 +17,4 @@
 * [指令帮助](wikis/cmd.md)
 * [OP申请](wikis/op.md)
 * [友链相关](wikis/server.md)
+* [提交工单](wikis/pull.md)

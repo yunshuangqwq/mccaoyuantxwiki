@@ -3,7 +3,7 @@
 
 ## 一、 GitHub工单
 GitHub工单，因其特殊性，导致国内很多玩家在访问时会遇到问题。不过您也可以通过[watt toolkit(原名steam++)](https://steampp.net/)加速GitHub，从而打开GitHub及其工单页面。
-提交地址：[](https://github.com/yunshuangqwq/mccaoyuantxwiki/issues)
+提交地址：[https://github.com/yunshuangqwq/mccaoyuantxwiki/issues](https://github.com/yunshuangqwq/mccaoyuantxwiki/issues)
 ### watt toolkit下载
 您可以直接打开您电脑中的microsoft store(微软商店)搜索watt toolkit，然后下载安装即可。
 ![](https://img.yunr.us.kg/api/cfile/AgACAgUAAyEGAASO2xA4AAMYZweqinMdGRBWiIkJB4vI0re0A3QAAp_BMRtRgEFUeLoxZe1RUYsBAAMCAAN5AAM2BA)

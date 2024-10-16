@@ -1,6 +1,6 @@
 # menu
 
-* [官网](wikis/play.md)
+* [官网](https://play.ypshidifu.cn/)
 * [用户协议](wikis/player.md)
 * [前言](README.md)
 * [提交文档给我们](wikis/help.md)

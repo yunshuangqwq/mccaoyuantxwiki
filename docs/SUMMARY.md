@@ -19,3 +19,4 @@
 * [友链相关](wikis/server.md)
 * [提交工单](wikis/pull.md)
 * [注销账户](wikis/off.md)
+* [指令帮助](wikis/plays.md)

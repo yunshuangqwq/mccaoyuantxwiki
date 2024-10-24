@@ -9,7 +9,10 @@
 - 指令部分
 
 ## 提交文档方式
-将写好的mardown文档，打包成压缩文件，在我们的[官方社区平台](https://bbs.ypshidifu.cn/)发布申请，如果您的文档没有审核通过，我们会视情况给予1000-5000游戏币的安慰奖
+将写好的mardown文档以github工单、邮件、社区平台发贴等方式提交给我们。
+- github提交：请将您的markdown文档打包成压缩包，上传至[蓝奏云盘](https://lanzou.com)，并在工单中附上链接。[https://github.com/yunshuangqwq/mccaoyuantxwiki/issues/new/choose](https://github.com/yunshuangqwq/mccaoyuantxwiki/issues/new/choose)
+- 邮件提交：请您将markdown文档打包成压缩包，并发送至邮箱[mc@ypshidifu.cn](mailto:mc@ypshidifu.cn)
+- 社区平台发贴：请将您的markdown文档打包成压缩包，在社区平台的玩家交流板块发帖，并插入压缩包附件。[https://bbs.ypshidifu.cn/](https://bbs.ypshidifu.cn/index.php)
 ## 提交文档奖励
-- 审核通过，奖励1万-5万游戏币
-- 审核不通过，视情况奖励1000-5000游戏币
+- 若审核通过，您将获得10W-15W游戏币奖励，视情况决定是否给予更高的奖励
+- 若您的审核未通过，您将获得1W-5W游戏币的安慰奖。 

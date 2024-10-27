@@ -18,4 +18,3 @@
 * [OP申请](wikis/op.md)
 * [友链相关](wikis/server.md)
 * [提交工单](wikis/pull.md)
-* [注销账户](wikis/off.md)

@@ -22,4 +22,4 @@ w.caoyuanserverwiki=Windows<br>a.caoyuanserverwiki=Android<br>z.caoyuanserverwik
 ## 下载地址
 点下~~方文件名~~or[**网盘下载**](https://pan.ypshidifu.cn/#s/-j29y7UA)
 
-- 网盘采用**本服务器自建网盘**，拉满你的宽带，限速去***的，**我们永不限速！**
+- 网盘采用**本服务器自建网盘**，拉满你的宽带，限速去tm的，**我们永不限速！**

@@ -17,9 +17,7 @@
 修复了一些bug
 
 ## 文件名
-w.caoyuanserverwiki=Windows
-a.caoyuanserverwiki=Android
-z.caoyuanserverwiki=Windows+Android
+w.caoyuanserverwiki=Windows<br>a.caoyuanserverwiki=Android<br>z.caoyuanserverwiki=Windows+Android
 
 ## 下载地址
 点下~~方文件名~~or[**网盘下载**](https://pan.ypshidifu.cn/#s/-j29y7UA)

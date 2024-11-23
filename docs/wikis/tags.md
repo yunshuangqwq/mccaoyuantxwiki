@@ -14,12 +14,24 @@
 ![](https://img.yunr.us.kg/api/cfile/AgACAgUAAyEGAASO2xA4AAMvZ0FOFykAAcelXUDndCvuPLfSBxdFAAKQvTEbagEIVixfmDHwGUyWAQADAgADeQADNgQ)
 
 ## 更新说明
-修复了一些bug
+| 版本 | 更新内容 | 状态 |
+| :---: | :---: | :---: |
+|1.0.0 | 第一个版本 | 停止 |
+| 1.0.1 | 修复了部分BUG | 正常维护中 |
 
 ## 文件名
-w.caoyuanserverwiki=Windows<br>a.caoyuanserverwiki=Android<br>z.caoyuanserverwiki=Windows+Android
+| 名字 | 版本 |
+| --- | --- |
+| w.caoyuanserverwiki | windows |
+| a.caoyuanserverwiki | Android |
+| z.caoyuanserverwiki | Windows+Android |
 
 ## 下载地址
-点下~~方文件名~~or[**网盘下载**](https://pan.ypshidifu.cn/#s/-j29y7UA)
+| 位置 | 地址 |
+| --- | --- |
+| github | 点击下方文件名 |
+| 官方Wiki内| [网盘下载](https://pan.ypshidifu.cn/#s/-j29y7UA) |
+
+
 
 - 网盘采用**本服务器自建网盘**，拉满你的宽带，限速去tm的，**我们永不限速！**

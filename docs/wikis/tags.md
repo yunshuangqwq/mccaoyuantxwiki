@@ -1,7 +1,9 @@
 # Mc草原探险服务器wiki安装包
 
+## 软件官网
+**https://app.ypshidifu.cn/**
 # 温馨提示
-- 请使用**最新版**app，旧版本可能存在被攻击或其它不确定因素！若您执意选择旧版app，请自行承担风险！<br>如若app在安装时，提示`风险、病毒`属`正常现象`，请正常安装即可！如若您不放心，您可选择卸载删除！
+- 请使用**最新版**app，旧版本`可能存在被攻击或其它不确定因素`！若您执意选择旧版app，`请自行承担风险`！<br>如若app在安装时，提示`风险、病毒`属`正常现象`，请正常安装即可！如若您不放心，您可选择卸载删除！
 
 ## 检测截图
 ![](https://img.yunr.us.kg/api/cfile/AgACAgUAAyEGAASO2xA4AAMsZ0FNpaektbelsIYEmDTnugarCXEAAo29MRtqAQhWRzbYBcmj8ksBAAMCAAN3AAM2BA)
@@ -27,11 +29,11 @@
 | z.caoyuanserverwiki | Windows+Android |
 
 ## 下载地址
-| 位置 | 地址 |
-| --- | --- |
-| github | 点击下方文件名 |
-| 官方Wiki内| [网盘下载](https://pan.ypshidifu.cn/#s/-j29y7UA) |
+| 版本 | 地址 | 版本 |
+| --- | --- | --- |
+| Android | [点击下载](https://github.com/yunshuangqwq/mccaoyuantxwiki/releases/download/1.0.1/a.caoyuanserverwiki.apk) | 1.0.1 |
+| PC版| [一件前往](https://www.ypshidifu.cn/) | / |
+| PC+android | [点击下载](https://github.com/yunshuangqwq/mccaoyuantxwiki/releases/download/1.0.1/z.caoyuanserverwiki.zip) | 1.0.1 |
+| 网盘分流 | [官方自建盘](https://pan.ypshidifu.cn/#s/-j29y7UA) | 1.0.1 |
 
-
-
-- 网盘采用**本服务器自建网盘**，拉满你的宽带，限速去tm的，**我们永不限速！**
+官方网盘限速：`看你的带宽，带宽越大速度越快`！

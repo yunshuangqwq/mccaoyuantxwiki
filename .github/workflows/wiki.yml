@@ -3,12 +3,12 @@ name: Deploy GitBook with GitHub Pages dependencies preinstalled
 on:
   push:
     branches:
-      - mainaa
+      - main
     paths:
       - 'docs/**'
       - '.github/workflows/wiki.yml'
 
-  workflow_dispatch:
+##   workflow_dispatch:
 
 permissions:
   contents: read

@@ -3,7 +3,7 @@ name: Deploy GitBook with GitHub Pages dependencies preinstalled
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - 'docs/**'
       - '.github/workflows/wiki.yml'

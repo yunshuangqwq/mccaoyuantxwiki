@@ -41,12 +41,12 @@
 | 百度云分流 | [点击下载](https://pan.baidu.com/s/1zp-1Kjus0x57CpZ5TKsl9w?pwd=sdf1) | 提取码sdf1，版本1.0.1 |
 | 飞机云盘分流 | [点击下载](https://share.feijipan.com/s/HoCLDZrA) | 1.0.1 |
 
-各网盘速度比对：
-| 名字 | 速度 | 会员 |
+| 版本 | 地址 | 版本 |
 | --- | --- | --- |
-| 阿里云 | 2.0MB/s | 不限速 |
-| 百度云 | 128kb/s| 不限速 |
-| 飞机云 | 不限速 | 不限速 |
-| 官方云盘 | 带宽小速度慢 | 不对外注册 |
-
-
+| Android | [点击下载](https://github.com/yunshuangqwq/mccaoyuantxwiki/releases/download/1.0.1/a.caoyuanserverwiki.apk) | 1.0.1 |
+| PC版| [一件前往](https://www.ypshidifu.cn/) | / |
+| PC+android | [点击下载](https://github.com/yunshuangqwq/mccaoyuantxwiki/releases/download/1.0.1/z.caoyuanserverwiki.zip) | 1.0.1 |
+| 官方云盘分流 | [点击下载](https://pan.ypshidifu.cn/#s/-j29y7UA) | 1.0.1 |
+| 阿里云分流 | [点击下载](https://www.alipan.com/s/fumVaZNMruX) | 1.0.1 |
+| 百度云分流 | [点击下载](https://pan.baidu.com/s/1zp-1Kjus0x57CpZ5TKsl9w?pwd=sdf1) | 提取码sdf1，版本1.0.1 |
+| 飞机云盘分流 | [点击下载](https://share.feijipan.com/s/HoCLDZrA) | 1.0.1 |

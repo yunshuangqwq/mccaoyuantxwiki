@@ -8,7 +8,7 @@ on:
       - 'docs/**'
       - '.github/workflows/wiki.yml'
 
-  workflow_dispatch:
+##  workflow_dispatch:
 
 permissions:
   contents: read

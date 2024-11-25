@@ -6,8 +6,10 @@
 - 请使用**最新版**app，旧版本`可能存在被攻击或其它不确定因素`！若您执意选择旧版app，`请自行承担风险`！<br>如若app在安装时，提示`风险、病毒`属`正常现象`，请正常安装即可！如若您不放心，您可选择卸载删除！
 
 ## 检测截图
+**微步云沙箱**
 ![](https://img.yunr.us.kg/api/cfile/AgACAgUAAyEGAASO2xA4AAMsZ0FNpaektbelsIYEmDTnugarCXEAAo29MRtqAQhWRzbYBcmj8ksBAAMCAAN3AAM2BA)
 
+**火绒6.0最新病毒库**
 ![](https://img.yunr.us.kg/api/cfile/AgACAgUAAyEGAASO2xA4AAMtZ0FN3px2AZ_GdFctzvFIar4Ut84AAo69MRtqAQhWZbEZ6sdVyFUBAAMCAAN5AAM2BA)
 
 ## 运行截图
@@ -34,6 +36,16 @@
 | Android | [点击下载](https://github.com/yunshuangqwq/mccaoyuantxwiki/releases/download/1.0.1/a.caoyuanserverwiki.apk) | 1.0.1 |
 | PC版| [一件前往](https://www.ypshidifu.cn/) | / |
 | PC+android | [点击下载](https://github.com/yunshuangqwq/mccaoyuantxwiki/releases/download/1.0.1/z.caoyuanserverwiki.zip) | 1.0.1 |
-| 网盘分流 | [官方自建盘](https://pan.ypshidifu.cn/#s/-j29y7UA) | 1.0.1 |
+| 官方云盘分流 | [点击下载](https://pan.ypshidifu.cn/#s/-j29y7UA) | 1.0.1 |
+| 阿里云分流 | [点击下载](https://www.alipan.com/s/fumVaZNMruX) | 1.0.1 |
+| 百度云分流 | [点击下载](https://pan.baidu.com/s/1zp-1Kjus0x57CpZ5TKsl9w?pwd=sdf1) | 提取码sdf1，版本1.0.1 |
+| 飞机云盘分流 | [点击下载](https://share.feijipan.com/s/HoCLDZrA) | 1.0.1 |
 
-官方网盘限速：`看你的带宽，带宽越大速度越快`！
+各网盘速度比对：
+| 名字 | 速度 | 会员 |
+| :---: | :---: | :---: |
+| 阿里云 | 2.0MB/s | 不限速 |
+| 百度云 | 128kb/s| 不限速 |
+| 飞机云 | 不限速 | 不限速 |
+| 官方云盘 | 带宽小速度慢 | 不对外注册 |
+

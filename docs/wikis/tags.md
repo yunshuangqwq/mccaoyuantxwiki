@@ -34,13 +34,15 @@
 | 版本 | 地址 | 版本 |
 | --- | --- | --- |
 | Android | [点击下载](https://github.com/yunshuangqwq/mccaoyuantxwiki/releases/download/1.0.1/a.caoyuanserverwiki.apk) | 1.0.1 |
-| PC版| [一件前往](https://www.ypshidifu.cn/) | / |
-| PC+android | [点击下载](https://github.com/yunshuangqwq/mccaoyuantxwiki/releases/download/1.0.1/z.caoyuanserverwiki.zip) | 1.0.1 |
-| 官方云盘分流 | [点击下载](https://pan.ypshidifu.cn/#s/-j29y7UA) | 1.0.1 |
-| 阿里云分流 | [点击下载](https://www.alipan.com/s/fumVaZNMruX) | 1.0.1 |
-| 百度云分流 | [点击下载](https://pan.baidu.com/s/1zp-1Kjus0x57CpZ5TKsl9w?pwd=sdf1) | 提取码sdf1，版本1.0.1 |
-| 飞机云盘分流 | [点击下载](https://share.feijipan.com/s/HoCLDZrA) | 1.0.1 |
+| PC版| 当前就在Wiki页内，PC仅做了BAT文件的快捷方式 | / |
+| PC快捷方式+android | [点击下载](https://github.com/yunshuangqwq/mccaoyuantxwiki/releases/download/1.0.1/z.caoyuanserverwiki.zip) | 1.0.1 |
+| 网盘分流 | [点击前往](https://play.ypshidifu.cn/down.html) | 1.0.1 |
 
 
-默认从GitHub下载，您可选择网盘分流，各网盘速度不一，具体数据如下：<br>
-**GitHub ：看运气，有时抽风连不上<br>官方云：3.75MB/s(带宽较小，请理解！)<br>阿里云非会员2.0MB/s，会员不限速<br>百度云非会员：128kb/s，会员不限速<br>飞机云盘不限速下载，会员仅提升容量**
+如果您选直接下载，则是默认链接本服务器Wiki所属GitHub仓库，因GitHub的特性，可能导致下载失败、速度慢、打不开(time out)等，建议选择网盘分流！
+网盘分流是连接国内各网盘服务器或本服官方云盘，速度更快，下载更稳定！地址：https://play.ypshidifu.cn/down.html
+
+## 使用方法：
+Android版：安装后打开即可
+PC版：双击exe文件即可，会自动调用浏览器访问本页面！
+不论PC&Android，均需联网！

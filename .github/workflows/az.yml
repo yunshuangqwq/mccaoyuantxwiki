@@ -43,7 +43,7 @@ jobs:
         uses: "DavidAnson/markdownlint-cli2-action@v17"
         with:
           fix: true
-          globs: 'docs*/**/*.md'
+          globs: 'newdocs*/**/*.md'
 
       # 构建
       - name: Build

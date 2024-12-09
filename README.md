@@ -1,4 +1,3 @@
-
 # 前言
 欢迎您游玩[草原探险服务器](https://play.ypshidifu.cn/)，本服务器采用minecraft1.20.x~1.21.3版本而搭建，免费开放给玩家游玩，并且服务器基于半公益模式，你既可以选择[充值游戏币](https://play.ypshidifu.cn/qun/cz.html)也可选择自行探索、与游戏店交易，获取大量游戏币。总之，获取游戏币的方式有很多种，除了通过非法手段获得！
 
@@ -48,7 +47,7 @@
 - Markdown语法教程：https://markdown.com.cn/basic-syntax/
 
 # 贡献者名单
-感谢贡献者们让文档越来越完善QWQ
+感谢贡献者们让文档越来越完善QWQ！
 <!-- readme: contributors -start -->
 <table>
 <tr>
@@ -75,3 +74,4 @@
     </td></tr>
 </table>
 <!-- readme: contributors -end -->
+最好祝各位万事如意，心想事成！

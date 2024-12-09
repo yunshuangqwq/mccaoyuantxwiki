@@ -3,10 +3,8 @@ name: Wiki Deploy
 # 触发条件
 on: 
   push:
-    branches: [ 'main' ]
-    paths:
     
-    workflow_dispatch:
+  workflow_dispatch:
 
 # 设置权限
 permissions:

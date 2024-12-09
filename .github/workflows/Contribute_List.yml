@@ -1,4 +1,4 @@
-name: Build Contribute List
+name: Contribute List
 on:
   push:
     branches:

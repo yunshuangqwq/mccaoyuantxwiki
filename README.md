@@ -43,9 +43,12 @@
 
 ```
 
-
-
 # 文档格式
 文档格式请使用markdown格式，使用支持markdown语法的编辑器([如Vs code](https://code.visualstudio.com/))，我们暂且不支持如(x.docx、x.txt)等其他格式<br>
 - Markdown语法教程：https://markdown.com.cn/basic-syntax/
 
+# 贡献者名单
+感谢贡献者们让文档越来越完善QWQ
+<!-- readme: contributors -start -->
+
+<!-- readme: contributors -end -->

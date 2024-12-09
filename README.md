@@ -48,6 +48,7 @@
 
 # 贡献者名单
 感谢贡献者们让文档越来越完善QWQ！
+此贡献名单为工作流自动生成
 <!-- readme: contributors -start -->
 <table>
 <tr>

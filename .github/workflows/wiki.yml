@@ -16,10 +16,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # 尝试使用 Node.js 16 版本
+          node-version: '12' # 根据搜索结果，Node.js v12.16.3 版本支持很好 [^37^]
+
+      - name: Uninstall gitbook (if installed)
+        run: npm uninstall -g gitbook
 
       - name: Install GitBook CLI
-        run: npm install -g gitbook-cli@3.2.3
+        run: npm install -g gitbook-cli
 
       - name: Install GitBook plugins
         run: gitbook install ./docs

@@ -39,6 +39,7 @@ jobs:
       - name: Install GitBook plugins and build
         run: |
           cd docs
+          npm install
           gitbook install
           gitbook build
           mv _book ..  # 移动构建输出到根目录
@@ -47,5 +48,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
           publish_dir: ./_book

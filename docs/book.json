@@ -2,6 +2,7 @@
   "title": "MC草原探险服帮助文档",
   "plugins": [
     "chapter-fold",
+   "-sharing"
     "sidebar-style",
     "edit-link",
     "code",

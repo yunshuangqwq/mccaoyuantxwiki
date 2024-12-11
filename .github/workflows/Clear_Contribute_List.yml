@@ -9,6 +9,13 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.TOKEN }}
+
+    - name: Set git identity
+      run: |
+        git config --local user.email "shidang233@outlook.com"
+        git config --local user.name "yunshuangqwq"
 
     - name: Clear contributors in README
       run: |
@@ -18,5 +25,5 @@ jobs:
       run: |
         git commit -am "Clear contributors list"
         git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}

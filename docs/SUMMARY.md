@@ -18,5 +18,5 @@
 * [指令帮助](wikis/plays.md)
 * [OP申请](wikis/op.md)
 * [友链相关](wikis/server.md)
-* [提交工单](wikis/lssues.md)
+* [提交工单](wikis/issues.md)
 

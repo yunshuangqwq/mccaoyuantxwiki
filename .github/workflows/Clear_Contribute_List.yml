@@ -19,11 +19,13 @@ jobs:
 
     - name: Clear contributors in README
       run: |
-        sed -i '/<!-- readme: contributors -start -->/,/<!-- readme: contributors -end -->/d' README.md
-
-    - name: Commit and push changes
-      run: |
-        git commit -am "Clear contributors list"
-        git push
+        if grep -q '<!-- readme: contributors -start -->' README.md; then
+          sed -i '/<!-- readme: contributors -start -->/,/<!-- readme: contributors -end -->/d' README.md
+          git add README.md
+          git commit -am "Clear contributors list"
+          git push
+        else
+          echo "清除贡献者名单"
+        fi
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}

@@ -1,21 +1,87 @@
 {
-  "plugins": [
-    "chapter-fold",
-    "sidebar-style",
-    "code",
-    "github"
-  ],
-  "pluginsConfig": {
-    "sidebar-style": {
-      "title": "MC草原探险服Wiki",
-      "author": "你猜"
+    "title": "MC草原探险服文档站",
+    "author": "你猜",
+    "description": "这是是MC草原探险服务器的文档站记录了一些帮助文档。",
+    "language": "zh-hans",
+    "direction": "ltr",
+    "gitbook": "*",
+    "structure": {
+        "readme": "README.md"
     },
-    "code": {
-      "lineNumbers": true,
-      "copyButtons": true
+    "links": {
+        "sidebar": {
+            "GitHub": "https://github.com/yunshuangqwq/mccaoyuantxwiki"
+        }
     },
-    "github": {
-      "url": "https://github.com/yunshuangqwq/minecraftcaoyuantanxianwiki"
+    "plugins": [
+        "-search", // 禁用默认搜索插件，使用search-pro
+        "search-pro",
+        "-sharing", // 禁用默认分享插件，使用sharing-plus
+        "sharing-plus",
+        "highlight",
+        "font-settings",
+        "livereload",
+        "anchor-navigation-ex",
+        "expandable-chapters-small",
+        "alerts",
+        "insert-logo",
+        "flexible-alerts",
+        "back-to-top-button",
+        "code",
+        "image-captions",
+        "advanced-emoji",
+        "chapter-fold",
+        "copy-code-button",
+        "edit-link",
+        "github-buttons",
+        "lightbox",
+        "popup",
+        "tbfed-pagefooter",
+        "page-copyright",
+        "emphasize",
+        "anchors",
+        "auto-scroll-table",
+        "click-reveal",
+        "custom-favicon",
+        "accordion",
+        "hide-element",
+        "donate",
+        "change-girls",
+        "pageview-count",
+        "klipse"
+    ],
+    "pluginsConfig": {
+        "sharing": {
+            "douban": true,
+            "facebook": true,
+            "google": true,
+            "instapaper": true,
+            "linkedin": true,
+            "messenger": true,
+            "twitter": true,
+            "weibo": true
+        },
+        "edit-link": {
+            "base": "https://github.com/yunshuangqwq/mccaoyuantxwiki/docs/wikis",
+            "label": "编辑此页"
+        },
+        "tbfed-pagefooter": {
+            "copyright": "&copy; 无",
+            "modify_label": "最后修改时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "github-buttons": {
+            "repo": "你的GitHub仓库",
+            "types": ["star", "watch", "fork"],
+            "size": "small"
+        },
+        "insert-logo": {
+            "url": "路径到你的logo图片",
+            "style": "background: none; max-height: 100px; min-height: 30px"
+        },
+        "image-captions": {
+            "caption": "Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_",
+            "align": "left"
+        }
     }
-  }
 }

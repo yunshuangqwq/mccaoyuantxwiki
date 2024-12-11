@@ -21,7 +21,7 @@
       "url": "https://github.com/yunshuangqwq/mccaoyuantxwiki"
     },
     "edit-link": {
-      "base": "https://github.com/yunshuangqwq/mccaoyuantxwiki/docs",
+      "base": "https://github.com/yunshuangqwq/mccaoyuantxwiki/tree/main/docs",
       "label": "编辑此页"
     }
   }

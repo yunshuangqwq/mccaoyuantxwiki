@@ -18,6 +18,10 @@
     },
     "github": {
       "url": "https://github.com/yunshuangqwq/mccaoyuantxwiki"
+    },
+    "edit-link": {
+      "base": "https://github.com/yunshuangqwq/mccaoyuantxwiki/docs/wikis",
+      "label": "编辑此页"
     }
   }
 }

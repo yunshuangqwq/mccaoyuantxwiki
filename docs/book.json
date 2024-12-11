@@ -1,5 +1,5 @@
 {
-  "title": "Dominion插件文档",
+  "title": "MC草原探险服帮助文档",
   "plugins": [
     "chapter-fold",
     "sidebar-style",
@@ -8,15 +8,15 @@
   ],
   "pluginsConfig": {
     "sidebar-style": {
-      "title": "Dominion",
-      "author": "zhangyuheng"
+      "title": "MC草原探险Wiki",
+      "author": "共创"
     },
     "code": {
       "lineNumbers": true,
       "copyButtons": true
     },
     "github": {
-      "url": "https://github.com/ColdeZhang/Dominion"
+      "url": "https://github.com/yunshuangqwq/mccaoyuantxwiki"
     }
   }
 }

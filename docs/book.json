@@ -14,9 +14,9 @@
         }
     },
     "plugins": [
-        "-search", ## 禁用默认搜索插件，使用search-pro
+        "-search",
         "search-pro",
-        "-sharing", ## 禁用默认分享插件，使用sharing-plus
+        "-sharing",
         "sharing-plus",
         "highlight",
         "font-settings",

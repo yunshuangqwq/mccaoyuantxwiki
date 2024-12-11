@@ -4,6 +4,7 @@
 * [用户协议](wikis/player.md)
 * [前言](README.md)
 * [手机app](wikis/tags.md)
+* [奖励领取](wikis/reward.md)
 * [注册和登陆](wikis/login.md)
 * [领地保护](wikis/dom.md)
 * [地图画](wikis/map.md)
@@ -18,3 +19,4 @@
 * [OP申请](wikis/op.md)
 * [友链相关](wikis/server.md)
 * [提交工单](wikis/lssues.md)
+

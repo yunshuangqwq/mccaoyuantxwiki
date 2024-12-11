@@ -14,18 +14,19 @@ jobs:
 
     - name: Set git identity
       run: |
-        git config --local user.email "79011008+yunshuangqwq@users.noreply.github.com"
+        git config --local user.email ""
         git config --local user.name "yunshuangqwq"
 
     - name: Clear contributors in README
       run: |
-        if grep -q '<!-- readme: contributors -start -->' README.md; then
-          sed -i '/<!-- readme: contributors -start -->/,/<!-- readme: contributors -end -->/d' README.md
-          git add README.md
-          git commit -am "Clear contributors list"
-          git push
+        sed -i '/<!-- readme: contributors -start -->/,/<!-- readme: contributors -end -->/{/<!-- readme: contributors -start -->/!{/<!-- readme: contributors -end -->/!d}}' README.md
+
+        if git diff --quiet README.md; then
+          echo "No changes to commit."
         else
-          echo "Contributors section not found"
+          git add README.md
+          git commit -m "Clear contributors list"
+          git push
         fi
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}

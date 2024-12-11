@@ -1,4 +1,4 @@
-name: Deploy GitBook to GitHub Pages
+name: Build and Deploy GitBook
 
 on:
   push:
@@ -16,10 +16,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'  # 根据项目需求选择适当的Node.js版本
+          node-version: '12'  # 尝试使用Node.js 12版本
 
       - name: Install GitBook CLI
         run: npm install -g gitbook-cli
+
+      - name: Update graceful-fs
+        run: |
+          cd $(npm root -g)/gitbook-cli/node_modules/npm/node_modules/
+          npm install graceful-fs@latest --save
 
       - name: Install GitBook plugins
         run: gitbook install ./docs
@@ -30,5 +35,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
           publish_dir: ./docs/_book

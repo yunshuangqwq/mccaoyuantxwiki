@@ -3,8 +3,7 @@
   "plugins": [
     "-search",
     "search-pro",
-    "-sharing",
-    "sharing-plus",
+    "sharing",
     "highlight",
     "livereload",
     "expandable-chapters-small",

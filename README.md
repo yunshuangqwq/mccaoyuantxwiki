@@ -56,7 +56,7 @@
         <a href="https://github.com/yunshuangqwq">
             <img src="https://avatars.githubusercontent.com/u/79011008?v=4" width="90;" alt="yunshuangqwq"/>
             <br />
-            <sub><b>云霜</b></sub>
+            <sub><b>云</b></sub>
         </a>
     </td>
     <td align="center">

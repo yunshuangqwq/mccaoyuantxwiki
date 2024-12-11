@@ -1,0 +1,24 @@
+name: Clear Contributors List
+
+on:
+  workflow_dispatch:
+
+jobs:
+  clear-contributors:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Clear contributors in README
+      run: |
+        sed -i '/<!-- readme: contributors -start -->/,/<!-- readme: contributors -end -->/d' README.md
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "shidang233@outlook.com"
+        git config --local user.name "yunshuangqwq"
+        git commit -am "Clear contributors list"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}

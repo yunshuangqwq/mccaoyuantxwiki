@@ -25,7 +25,7 @@ jobs:
           git commit -am "Clear contributors list"
           git push
         else
-          echo "清除贡献者名单"
+          echo "Clear Contributors List"
         fi
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}

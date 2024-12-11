@@ -16,9 +16,7 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        git config --local user.email "shidang233@outlook.com"
-        git config --local user.name "yunshuangqwq"
         git commit -am "Clear contributors list"
         git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}

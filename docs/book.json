@@ -3,7 +3,7 @@
   "plugins": [
     "chapter-fold",
     "sidebar-style",
-   "edit-link",
+    "edit-link",
     "code",
     "github"
   ],

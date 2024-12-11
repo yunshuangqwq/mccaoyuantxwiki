@@ -1,37 +1,37 @@
 {
   "title": "MC草原探险服文档站",
-     "plugins": [
-        "-search",
-        "search-pro",
-        "-sharing",
-        "sharing-plus",
-        "highlight",
-        "livereload",
-        "expandable-chapters-small",
-        "alerts",
-        "insert-logo",
-        "flexible-alerts",
-        "back-to-top-button",
-        "code",
-        "image-captions",
-        "advanced-emoji",
-        "chapter-fold",
-        "copy-code-button",
-        "github-buttons",
-        "popup",
-        "tbfed-pagefooter",
-        "page-copyright",
-        "emphasize",
-        "anchors",
-        "auto-scroll-table",
-        "click-reveal",
-        "custom-favicon",
-        "accordion",
-        "hide-element",
-        "donate",
-        "pageview-count",
-        "github"
-    ],
+  "plugins": [
+    "-search",
+    "search-pro",
+    "-sharing",
+    "sharing-plus",
+    "highlight",
+    "livereload",
+    "expandable-chapters-small",
+    "alerts",
+    "insert-logo",
+    "flexible-alerts",
+    "back-to-top-button",
+    "code",
+    "image-captions",
+    "advanced-emoji",
+    "chapter-fold",
+    "copy-code-button",
+    "github-buttons",
+    "popup",
+    "tbfed-pagefooter",
+    "page-copyright",
+    "emphasize",
+    "anchors",
+    "auto-scroll-table",
+    "click-reveal",
+    "custom-favicon",
+    "accordion",
+    "hide-element",
+    "donate",
+    "pageview-count",
+    "github"
+  ],
   "pluginsConfig": {
     "sidebar-style": {
       "title": "MC草原探险Wiki",
@@ -43,6 +43,13 @@
     },
     "github": {
       "url": "https://github.com/yunshuangqwq/mccaoyuantxwiki"
+    },
+    "donate": {
+      "wechat": "https://pic2.58cdn.com.cn/nowater/webim/big/n_v24f2634a414d94f0092f04ca7d087aa61.png",
+      "alipay": "支付宝收款的二维码URL",
+      "button": "赏",
+      "alipayText": "支付宝打赏",
+      "wechatText": "微信打赏"
     }
   }
 }

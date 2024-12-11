@@ -4,7 +4,7 @@
     "description": "这是是MC草原探险服务器的文档站记录了一些帮助文档。",
     "language": "zh-hans",
     "direction": "ltr",
-    "gitbook": "3.2.3",
+    "gitbook": "*",
     "structure": {
         "readme": "README.md"
     },

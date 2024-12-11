@@ -1,0 +1,22 @@
+{
+  "title": "Dominion插件文档",
+  "plugins": [
+    "chapter-fold",
+    "sidebar-style",
+    "code",
+    "github"
+  ],
+  "pluginsConfig": {
+    "sidebar-style": {
+      "title": "Dominion",
+      "author": "zhangyuheng"
+    },
+    "code": {
+      "lineNumbers": true,
+      "copyButtons": true
+    },
+    "github": {
+      "url": "https://github.com/ColdeZhang/Dominion"
+    }
+  }
+}

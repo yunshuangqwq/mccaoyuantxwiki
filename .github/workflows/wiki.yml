@@ -1,55 +1,36 @@
-name: Deploy GitBook with GitHub Pages dependencies preinstalled
+name: Deploy GitBook to Main Branch
 
 on:
   push:
     branches:
       - main
-    paths:
-      - 'docs/**'
-      - '.github/workflows/wiki.yml'
-
-##   workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  workflow_dispatch:
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v4.0.3
-        with:
-          node-version: '10.21.0'
-      - name: Install gitbook-cli
-        run: |
-          npm install -g gitbook-cli
-      - name: Build with gitbook
-        run: |
-          gitbook install docs
-          gitbook build docs
-          mv docs/_book _site
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install GitBook CLI
+        run: sudo npm install -g gitbook-cli@2.1.2
+
+      - name: Install GitBook plugins
+        run: gitbook install ./docs
+
+      - name: Build GitBook
+        run: gitbook build ./docs
+
+      - name: Deploy to Main Branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: main
+          FOLDER: ./docs/_book
+          CLEAN: true

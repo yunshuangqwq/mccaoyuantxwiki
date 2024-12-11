@@ -1,4 +1,4 @@
-name: Deploy GitBook with GitHub Pages dependencies preinstalled
+name: Build and Deploy GitBook
 
 on:
   push:
@@ -23,26 +23,37 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v4.0.3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: '10.21.0'
+          node-version: '12'  # 使用Node.js 12版本，这是社区推荐的版本
 
-      - name: Install gitbook-cli
+      - name: Install GitBook CLI
         run: |
           npm install -g gitbook-cli
           gitbook --version  # 打印版本信息，确认安装成功
 
-      - name: Install GitBook plugins and build
+      - name: Create SUMMARY.md if not exists
+        run: |
+          if [ ! -f "docs/SUMMARY.md" ]; then
+            echo "# Summary" >> docs/SUMMARY.md
+            echo "* [README](README.md)" >> docs/SUMMARY.md
+          fi
+
+      - name: Install GitBook plugins
         run: |
           cd docs
           npm install
           gitbook install
+
+      - name: Build with gitbook
+        run: |
+          cd docs
           gitbook build
-          mv _book ..  # 移动构建输出到根目录
+          mv _book ..  
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

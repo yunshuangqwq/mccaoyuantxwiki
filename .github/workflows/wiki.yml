@@ -1,4 +1,4 @@
-name: Build and Deploy GitBook
+name: Deploy GitBook with GitHub Pages dependencies preinstalled
 
 on:
   push:
@@ -20,42 +20,36 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.0.3
         with:
-          node-version: '12'  # 使用Node.js 12版本，这是社区推荐的版本
-
-      - name: Install GitBook CLI
+          node-version: '10.21.0'
+      - name: Install gitbook-cli
         run: |
           npm install -g gitbook-cli
-          gitbook --version  # 打印版本信息，确认安装成功
-
-      - name: Update graceful-fs
-        run: |
-          cd $(npm root -g)/gitbook-cli/node_modules/npm/node_modules/graceful-fs/
-          npm install graceful-fs@latest --save
-
-      - name: Install GitBook plugins
-        run: |
-          cd docs
-          npm install
-          gitbook install
-
       - name: Build with gitbook
         run: |
-          cd docs
-          gitbook build
-          mv _book ..  # 移动构建输出到根目录
+          gitbook install docs
+          gitbook build docs
+          mv docs/_book _site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
 
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_book
+        id: deployment
+        uses: actions/deploy-pages@v4

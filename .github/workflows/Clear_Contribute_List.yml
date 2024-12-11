@@ -12,7 +12,7 @@ jobs:
       with:
         token: ${{ secrets.TOKEN }}
 
-      - name: Set up Git user
+      - name: Set Git identity
         run: |
           git config --local user.email "shidang233@outlook.com"
           git config --local user.name "yunshuangqwq"

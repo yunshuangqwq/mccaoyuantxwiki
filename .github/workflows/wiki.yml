@@ -1,4 +1,4 @@
-name: Deploy GitBook to Main Branch
+name: Build and Deploy GitBook
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
           node-version: '14'
 
       - name: Install GitBook CLI
-        run: sudo npm install -g gitbook-cli@2.1.2
+        run: npm install -g gitbook-cli
 
       - name: Install GitBook plugins
         run: gitbook install ./docs
@@ -27,10 +27,8 @@ jobs:
       - name: Build GitBook
         run: gitbook build ./docs
 
-      - name: Deploy to Main Branch
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: main
-          FOLDER: ./docs/_book
-          CLEAN: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/_book

@@ -67,7 +67,7 @@
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "github-buttons": {
-            "repo": "你的GitHub仓库",
+            "repo": "yunshuangqwq/mccaoyuantxwiki",
             "types": ["star", "watch", "fork"],
             "size": "small"
         },
@@ -78,6 +78,14 @@
         "image-captions": {
             "caption": "Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_",
             "align": "left"
+        },
+        "donate": {
+            "wechat": "https://pic2.58cdn.com.cn/nowater/webim/big/n_v24f2634a414d94f0092f04ca7d087aa61.png",
+            "alipay": "",
+            "title": "支持我们",
+            "button": "打赏",
+            "alipayText": "支付宝打赏",
+            "wechatText": "微信打赏"
         }
     }
 }

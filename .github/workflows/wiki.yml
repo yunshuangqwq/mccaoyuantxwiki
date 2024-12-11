@@ -36,12 +36,10 @@ jobs:
           npm install -g gitbook-cli
           gitbook --version  # 打印版本信息，确认安装成功
 
-      - name: Create SUMMARY.md if not exists
+      - name: Update graceful-fs
         run: |
-          if [ ! -f "docs/SUMMARY.md" ]; then
-            echo "# Summary" >> docs/SUMMARY.md
-            echo "* [README](README.md)" >> docs/SUMMARY.md
-          fi
+          cd $(npm root -g)/gitbook-cli/node_modules/npm/node_modules/graceful-fs/
+          npm install graceful-fs@latest --save
 
       - name: Install GitBook plugins
         run: |
@@ -53,11 +51,11 @@ jobs:
         run: |
           cd docs
           gitbook build
-          mv _book ..  
+          mv _book ..  # 移动构建输出到根目录
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         with:
-          github_token: ${{ secrets.TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_book

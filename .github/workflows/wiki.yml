@@ -16,24 +16,39 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '12'  # 尝试使用Node.js 12版本
+          node-version: '14'  # 使用Node.js 14版本，这是社区推荐的版本
 
       - name: Install GitBook CLI
-        run: npm install -g gitbook-cli
-
-      - name: Update graceful-fs
         run: |
-          cd $(npm root -g)/gitbook-cli/node_modules/npm/node_modules/
-          npm install graceful-fs@latest --save
+          npm install -g gitbook-cli
+          gitbook --version  # 打印版本信息，确认安装成功
 
-      - name: Install GitBook plugins
-        run: gitbook install ./docs
+      - name: Install GitBook plugins and dependencies
+        run: |
+          cd docs
+          npm install
+          gitbook install
+          cd ..
 
       - name: Build GitBook
-        run: gitbook build ./docs
+        run: |
+          cd docs
+          gitbook build
+          cd ..
+
+      - name: Check if the build was successful
+        id: check_build
+        run: |
+          if [ -d "./docs/_book" ]; then
+            echo "Build successful, _book directory exists."
+          else
+            echo "Build failed, _book directory does not exist."
+            exit 1
+          fi
 
       - name: Deploy to GitHub Pages
+        if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs/_book

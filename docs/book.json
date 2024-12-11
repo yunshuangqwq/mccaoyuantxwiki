@@ -1,91 +1,22 @@
+
 {
-    "title": "MC草原探险服文档站",
-    "author": "你猜",
-    "description": "这是是MC草原探险服务器的文档站记录了一些帮助文档。",
-    "language": "zh-hans",
-    "direction": "ltr",
-    "gitbook": "*",
-    "structure": {
-        "readme": "README.md"
+  "plugins": [
+    "chapter-fold",
+    "sidebar-style",
+    "code",
+    "github"
+  ],
+  "pluginsConfig": {
+    "sidebar-style": {
+      "title": "Dominion",
+      "author": "zhangyuheng"
     },
-    "links": {
-        "sidebar": {
-            "GitHub": "https://github.com/yunshuangqwq/mccaoyuantxwiki"
-        }
+    "code": {
+      "lineNumbers": true,
+      "copyButtons": true
     },
-    "plugins": [
-        "-search",
-        "search-pro",
-        "-sharing",
-        "sharing-plus",
-        "highlight",
-        "livereload",
-        "expandable-chapters-small",
-        "alerts",
-        "insert-logo",
-        "flexible-alerts",
-        "back-to-top-button",
-        "code",
-        "image-captions",
-        "advanced-emoji",
-        "chapter-fold",
-        "copy-code-button",
-        "edit-link",
-        "github-buttons",
-        "popup",
-        "tbfed-pagefooter",
-        "page-copyright",
-        "emphasize",
-        "anchors",
-        "auto-scroll-table",
-        "click-reveal",
-        "custom-favicon",
-        "accordion",
-        "hide-element",
-        "donate",
-        "pageview-count",
-        "klipse"
-    ],
-    "pluginsConfig": {
-        "sharing": {
-            "douban": true,
-            "facebook": true,
-            "google": true,
-            "instapaper": true,
-            "linkedin": true,
-            "messenger": true,
-            "twitter": true,
-            "weibo": true
-        },
-        "edit-link": {
-            "base": "https://github.com/yunshuangqwq/mccaoyuantxwiki/docs/wikis",
-            "label": "编辑此页"
-        },
-        "tbfed-pagefooter": {
-            "copyright": "&copy; 无",
-            "modify_label": "最后修改时间：",
-            "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "github-buttons": {
-            "repo": "yunshuangqwq/mccaoyuantxwiki",
-            "types": ["star", "watch", "fork"],
-            "size": "small"
-        },
-        "insert-logo": {
-            "url": "路径到你的logo图片",
-            "style": "background: none; max-height: 100px; min-height: 30px"
-        },
-        "image-captions": {
-            "caption": "Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_",
-            "align": "left"
-        },
-        "donate": {
-            "wechat": "https://pic2.58cdn.com.cn/nowater/webim/big/n_v24f2634a414d94f0092f04ca7d087aa61.png",
-            "alipay": "https://pic2.58cdn.com.cn/nowater/webim/big/n_v24f2634a414d94f0092f04ca7d087aa61.png",
-            "title": "支持我们",
-            "button": "打赏",
-            "alipayText": "支付宝打赏",
-            "wechatText": "微信打赏"
-        }
+    "github": {
+      "url": "https://github.com/ColdeZhang/Dominion"
     }
+  }
 }

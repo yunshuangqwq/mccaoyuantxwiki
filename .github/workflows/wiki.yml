@@ -20,7 +20,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -36,36 +36,16 @@ jobs:
           npm install -g gitbook-cli
           gitbook --version  # 打印版本信息，确认安装成功
 
-      - name: Update graceful-fs
-        run: |
-          cd $(npm root -g)/gitbook-cli/node_modules/npm/node_modules/
-          npm install graceful-fs@latest --save
-
-      - name: Install GitBook plugins
+      - name: Install GitBook plugins and build
         run: |
           cd docs
-          npm install
           gitbook install
-          cd ..
-
-      - name: Build with gitbook
-        run: |
-          cd docs
           gitbook build
-          cd ..
-          mv docs/_book _site
+          mv _book ..  # 移动构建输出到根目录
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_book

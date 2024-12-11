@@ -2,11 +2,6 @@ name: Clear Contributors List
 
 on:
   workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'
-        required: true
-        default: 'warning'
 
 jobs:
   clear-contributors:
@@ -17,13 +12,12 @@ jobs:
 
     - name: Clear contributors in README
       run: |
-        # 删除贡献者名单的正则表达式
         sed -i '/<!-- readme: contributors -start -->/,/<!-- readme: contributors -end -->/d' README.md
 
     - name: Commit and push changes
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.email "shidang233@outlook.com"
+        git config --local user.name "yunshuangqwq"
         git commit -am "Clear contributors list"
         git push
       env:

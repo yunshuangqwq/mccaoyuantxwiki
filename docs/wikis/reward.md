@@ -28,18 +28,22 @@
 
 ## 3.关注微信
 关注**官方微信**，即可获得**10万**游戏币奖励
+![](https://img.yunr.us.kg/api/cfile/AgACAgUAAyEGAASPllS8AANKZ1ka2KwZKuyxkwNrbiLnOy3yHqUAAgHEMRulD8hWXoYLCEMm5pEBAAMCAAN3AAM2BA)
+
 ### 活动细则
 - 活动有效期：长期有效
+- 点击底部官方群按钮，长按识别右侧二维码，将相关内容截图至官方群内即可
 
 ## 4.关注官方指定视频平台账号
 - b站(2选1)：<br>[史蒂夫(管理员)](https://space.bilibili.com/443788688?spm_id_from=333.1007.0.0) <br> [十当233(腐竹)](https://space.bilibili.com/603661561/?spm_id_from=333.999.0.0)
 - 抖音(2选1)：<br>史蒂夫(管理员)：sdf1726754243<br>十当233(腐竹)：mccaoyuantanxian
-- 微信公众号：![草原探险服务器](https://img.yunr.us.kg/api/cfile/AgACAgUAAyEGAASPllS8AANKZ1ka2KwZKuyxkwNrbiLnOy3yHqUAAgHEMRulD8hWXoYLCEMm5pEBAAMCAAN3AAM2BA)
+![](https://img.yunr.us.kg/api/cfile/AgACAgUAAyEGAASPllS8AANMZ1kpv6ZTwg-OEL0GfYamJIHcCgYAAjHEMRulD8hWJMd_KaU76R0BAAMCAAN3AAM2BA)
 - 快手(2选1)：<br>史蒂夫(管理员)：shidifujs<br>十当233(腐竹)：2912400575
+![](https://img.yunr.us.kg/api/cfile/AgACAgUAAyEGAASPllS8AANLZ1kpuMQBSy3o0KpUynTKkU_SBJUAAjDEMRulD8hWyGdMIptss0QBAAMCAAN3AAM2BA)
 
 ### 活动细则
 - 活动有效期：长期有效
-- 奖励领取：关注后，请在对应平台私信关注的账号，发送**游戏昵称**，奖励将在**1~2个工作日内**审核完毕并发放，微信公众号的需您前往官方群。点击底部官方群按钮，长按识别右侧二维码即可，左侧为QQ群。
+- 奖励领取：关注后，请在对应平台私信关注的账号，发送**游戏昵称**，奖励将在**1~2个工作日内**审核完毕并发放
 - 奖励封顶：无上限
 - 奖励领取次数：每位玩家每种奖励每周限1次
 

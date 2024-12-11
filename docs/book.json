@@ -1,4 +1,8 @@
-
+{
+    "title": "MC草原探险服文档站",
+    "description": "这是是MC草原探险服务器的文档站记录了一些帮助文档。",
+    "language": "zh-hans"
+    },
 {
   "plugins": [
     "chapter-fold",
@@ -8,15 +12,15 @@
   ],
   "pluginsConfig": {
     "sidebar-style": {
-      "title": "Dominion",
-      "author": "zhangyuheng"
+      "title": "MC草原探险Wiki",
+      "author": "共创"
     },
     "code": {
       "lineNumbers": true,
       "copyButtons": true
     },
     "github": {
-      "url": "https://github.com/ColdeZhang/Dominion"
+      "url": "https://github.com/yunshuangqwq/mccaoyuantxwiki"
     }
   }
 }

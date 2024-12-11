@@ -8,7 +8,6 @@
     "livereload",
     "expandable-chapters-small",
     "alerts",
-    "insert-logo",
     "flexible-alerts",
     "back-to-top-button",
     "code",
@@ -16,6 +15,7 @@
     "advanced-emoji",
     "chapter-fold",
     "copy-code-button",
+    "edit-link",
     "github-buttons",
     "popup",
     "tbfed-pagefooter",
@@ -42,12 +42,14 @@
     "github": {
       "url": "https://github.com/yunshuangqwq/mccaoyuantxwiki"
     },
-    "donate": {
-      "wechat": "https://pic2.58cdn.com.cn/nowater/webim/big/n_v24f2634a414d94f0092f04ca7d087aa61.png",
-      "alipay": "https://pic2.58cdn.com.cn/nowater/webim/big/n_v24f2634a414d94f0092f04ca7d087aa61.png",
-      "button": "赏",
-      "alipayText": "支付宝打赏",
-      "wechatText": "微信打赏"
-    }
+        "edit-link": {
+            "base": "https://github.com/yunshuangqwq/mccaoyuantxwiki/docs/wikis",
+            "label": "编辑此页"
+       },
+        "tbfed-pagefooter": {
+            "copyright": "&copy; 无",
+            "modify_label": "最后修改时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
   }
 }

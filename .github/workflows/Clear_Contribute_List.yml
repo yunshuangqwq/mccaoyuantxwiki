@@ -25,7 +25,7 @@ jobs:
           git commit -am "Clear contributors list"
           git push
         else
-          echo "Clear Contributors List"
+          echo "Contributors section not found"
         fi
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}

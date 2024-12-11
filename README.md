@@ -70,7 +70,7 @@
         <a href="https://github.com/yunshiang">
             <img src="https://avatars.githubusercontent.com/u/183727969?v=4" width="90;" alt="yunshiang"/>
             <br />
-            <sub><b>二货</b></sub>
+            <sub><b>1</b></sub>
         </a>
     </td></tr>
 </table>

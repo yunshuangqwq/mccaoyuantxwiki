@@ -50,29 +50,6 @@
 感谢贡献者们让文档越来越完善QWQ！
 此贡献名单为工作流自动生成
 <!-- readme: contributors -start -->
-<table>
-<tr>
-    <td align="center">
-        <a href="https://github.com/yunshuangqwq">
-            <img src="https://avatars.githubusercontent.com/u/79011008?v=4" width="90;" alt="yunshuangqwq"/>
-            <br />
-            <sub><b>二货1</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/youpaishidifu">
-            <img src="https://avatars.githubusercontent.com/u/189004954?v=4" width="90;" alt="youpaishidifu"/>
-            <br />
-            <sub><b>Youpaishidifu</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/yunshiang">
-            <img src="https://avatars.githubusercontent.com/u/183727969?v=4" width="90;" alt="yunshiang"/>
-            <br />
-            <sub><b>1</b></sub>
-        </a>
-    </td></tr>
-</table>
+
 <!-- readme: contributors -end -->
 最好祝各位万事如意，心想事成！

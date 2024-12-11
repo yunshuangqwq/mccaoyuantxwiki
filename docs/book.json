@@ -18,7 +18,6 @@
     "edit-link",
     "github-buttons",
     "popup",
-    "tbfed-pagefooter",
     "page-copyright",
     "emphasize",
     "anchors",
@@ -45,11 +44,6 @@
         "edit-link": {
             "base": "https://github.com/yunshuangqwq/mccaoyuantxwiki/docs/wikis",
             "label": "编辑此页"
-       },
-        "tbfed-pagefooter": {
-            "copyright": "&copy; 无",
-            "modify_label": "最后修改时间：",
-            "modify_format": "YYYY-MM-DD HH:mm:ss"
-        }
+       }
   }
 }

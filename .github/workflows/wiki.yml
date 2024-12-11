@@ -16,10 +16,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'  # 尝试使用 Node.js 16 版本
 
       - name: Install GitBook CLI
-        run: npm install -g gitbook-cli
+        run: npm install -g gitbook-cli@3.2.3
 
       - name: Install GitBook plugins
         run: gitbook install ./docs
@@ -30,5 +30,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
           publish_dir: ./docs/_book

@@ -1,9 +1,5 @@
 {
-    "title": "MC草原探险服文档站",
-    "description": "这是是MC草原探险服务器的文档站记录了一些帮助文档。",
-    "language": "zh-hans"
-    },
-{
+  "title": "MC草原探险服文档站"*,
   "plugins": [
     "chapter-fold",
     "sidebar-style",

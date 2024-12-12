@@ -1,30 +1,3 @@
-信息样式 ( info )：
-> **[info] For info**
-> Use this for information messages.
-这将显示为一个信息提示框。
-
-警告造型 ( warning )：
-> **[warning] For warning**
-> Use this for warning messages.
-这将显示为一个警告提示框。
-
-危险造型 ( danger )：
-> **[danger] For danger**
-> Use this for danger messages.
-这将显示为一个危险提示框。
-
-成功造型 ( success )：
-> **[success] For success**
-> Use this for success messages.
-这将显示为一个成功的提示框。
-
-- 这段文本是 {% em %}高亮的！{% endem %}
-- 这段文本是 {% em %}包含**Markdown**语法高亮的！{% endem %}
-- 这段文本是 {% em type="green" %}绿色高亮的！{% endem %}
-- 这段文本是 {% em type="red" %}红色高亮的！{% endem %}
-- 这段文本是 {% em color="#ff0000" %}自定义颜色高亮的！{% endem %}
-这些代码块会在渲染后的页面上显示为带有不同背景色的文本。
-
 # 前言
 欢迎您游玩[草原探险服务器](https://play.ypshidifu.cn/)，本服务器采用minecraft1.20.x~1.21.3版本而搭建，免费开放给玩家游玩，并且服务器基于半公益模式，你既可以选择[充值游戏币](https://play.ypshidifu.cn/qun/cz.html)也可选择自行探索、与游戏店交易，获取大量游戏币。总之，获取游戏币的方式有很多种，除了通过非法手段获得！
 

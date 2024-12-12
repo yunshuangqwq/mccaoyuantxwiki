@@ -1,5 +1,8 @@
 {
   "title": "MC草原探险服帮助文档",
+  "language": "zh-hans",
+  "direction": "ltr",
+  "gitbook": "3.2.3",
   "plugins": [
     "chapter-fold",
     "-sharing",

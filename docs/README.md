@@ -1,4 +1,25 @@
- 这段文本是 {% em %}高亮的！{% endem %}
+> **[info] For info**
+> Use this for information messages.
+
+> **[warning] For warning**
+> Use this for warning messages.
+
+> **[danger] For danger**
+> Use this for danger messages.
+
+> **[success] For success**
+> Use this for success messages.
+
+
+> [!NOTE]
+> 这是一个简单的Note类型的使用，所有的属性都是默认值。
+
+> [!NOTE|style:flat|label:MyLabel|iconVisibility:hidden]
+> "!type":`NOTE`、"style":`flat`、"label":`自定义标签`、图标不可见
+你可以通过  !type  设置警告级别（如 NOTE、TIP、WARNING、DANGER），并通过其他参数自定义样式、标签、图标等。
+
+
+- 这段文本是 {% em %}高亮的！{% endem %}
 - 这段文本是 {% em %}包含**Markdown**语法高亮的！{% endem %}
 - 这段文本是 {% em type="green" %}绿色高亮的！{% endem %}
 - 这段文本是 {% em type="red" %}红色高亮的！{% endem %}

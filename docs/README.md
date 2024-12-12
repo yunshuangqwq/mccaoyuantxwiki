@@ -1,3 +1,19 @@
+信息样式 ( info )：
+> **[info] For info**
+> Use this for information messages.
+这将显示为一个信息提示框。
+警告造型 ( warning )：
+> **[warning] For warning**
+> Use this for warning messages.
+这将显示为一个警告提示框。
+危险造型 ( danger )：
+> **[danger] For danger**
+> Use this for danger messages.
+这将显示为一个危险提示框。
+成功造型 ( success )：
+> **[success] For success**
+> Use this for success messages.
+这将显示为一个成功的提示框。
 
 - 这段文本是 {% em %}高亮的！{% endem %}
 - 这段文本是 {% em %}包含**Markdown**语法高亮的！{% endem %}

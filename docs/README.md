@@ -1,4 +1,4 @@
-> [!NOTE|style:flat|iconVisibility:visible|label;标题]
+> [!提示|style:flat|iconVisibility:visible]
 > 测试
 
 - 这段文本是 {% em %}高亮的！{% endem %}

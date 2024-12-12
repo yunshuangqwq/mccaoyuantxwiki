@@ -8,8 +8,6 @@ on:
       - 'docs/**'
       - '.github/workflows/wiki.yml'
 
-#  workflow_dispatch:
-
 permissions:
   contents: read
   pages: write

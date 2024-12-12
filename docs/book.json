@@ -3,6 +3,7 @@
   "language": "zh-hans",
   "plugins": [
     "-lunr",
+    "-search",
 
     "chapter-fold",
     "-sharing",

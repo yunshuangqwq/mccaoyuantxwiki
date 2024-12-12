@@ -2,15 +2,15 @@
   "title": "MC草原探险服帮助文档",
   "language": "zh-hans",
   "direction": "ltr",
-  "gitbook": "3.2.3",
+  "gitbook": "*",
   "plugins": [
     "chapter-fold",
     "-sharing",
     "sidebar-style",
     "edit-link",
     "code",
-    "lightbox",
     "emphasize",
+    "back-to-top-button",
     "github"
   ],
   "pluginsConfig": {
@@ -29,8 +29,5 @@
       "base": "https://github.com/yunshuangqwq/mccaoyuantxwiki/tree/main/docs",
       "label": "编辑此页"
     },
-    "lightbox": {
-      "sameUuid": true
-    }
   }
 }

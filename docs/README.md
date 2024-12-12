@@ -1,6 +1,5 @@
-> [!NOTE|style:flat|label:MyLabel|iconVisibility:hidden]
-> "!type":`危险`、"style":`flat`、"label":`自定义标签`、图标不可见
-你可以通过  !type  设置警告级别（如 NOTE、TIP、WARNING、DANGER），并通过其他参数自定义样式、标签、图标等。
+> [!NOTE|style:flat|label:|iconVisibility:hidden]
+1
 
 
 - 这段文本是 {% em %}高亮的！{% endem %}

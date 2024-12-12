@@ -1,6 +1,9 @@
 > [!NOTE|style:flat|label:2|iconVisibility:hidden]
 1
 
+> [!NOTE|style:flat|label:Mylable|iconVisibility:hidden]
+> "!type":`NOTE`、"style":`true`、"label":`自定义标签`、图标可见
+
 - 这段文本是 {% em %}高亮的！{% endem %}
 - 这段文本是 {% em %}包含**Markdown**语法高亮的！{% endem %}
 - 这段文本是 {% em type="green" %}绿色高亮的！{% endem %}

@@ -6,6 +6,8 @@
     "sidebar-style",
     "edit-link",
     "code",
+    "lightbox",
+    "emphasize",
     "github"
   ],
   "pluginsConfig": {

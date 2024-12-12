@@ -9,7 +9,6 @@
     "code",
     "emphasize",
     "back-to-top-button",
-    "flexible-alerts",
     "github"
   ],
   "pluginsConfig": {
@@ -32,13 +31,5 @@
     "-sharing": {},
     "emphasize": {},
     "back-to-top-button": {},
-    "flexible-alerts": {
-      "labels": {
-        "tip": "提示",
-        "info": "信息",
-        "warning": "警告",
-        "danger": "危险"
-      }
-    }
   }
 }

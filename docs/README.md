@@ -1,3 +1,25 @@
+例如，获取某个位置的领地信息：
+
+```java
+
+@Override
+public void onEnable() {
+    // Plugin startup logic
+    try {
+        DominionAPI dominionAPI = Dominion.getInstance();
+        DominionDTO d = dominionAPI.getDominionByLoc(some_location);
+        if (d == null) {
+            this.getLogger().info("no dominion found");
+            return;
+        }
+        this.getLogger().info("name:" + d.getName());
+    } catch (Exception e) {
+        this.getLogger().info(e.getMessage());
+    }
+}
+```
+
+
  这段文本是 {% em %}高亮的！{% endem %}
 - 这段文本是 {% em %}包含**Markdown**语法高亮的！{% endem %}
 - 这段文本是 {% em type="green" %}绿色高亮的！{% endem %}

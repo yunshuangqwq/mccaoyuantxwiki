@@ -1,6 +1,3 @@
-> [!NOTE|style:flat|label:2|iconVisibility:hidden]
-1
-
 > [!NOTE|style:flat|label:Mylable|iconVisibility:hidden]
 > "!type":`NOTE`、"style":`true`、"label":`自定义标签`、图标可见
 

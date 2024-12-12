@@ -89,6 +89,3 @@
 ---
 欢迎您补充！补充时，请使用markdown格式，具体[参考提交文档的步骤](help.md)
 
-
-- >**[info] testinfo **
-- >test

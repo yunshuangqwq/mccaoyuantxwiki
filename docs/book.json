@@ -27,6 +27,18 @@
     "edit-link": {
       "base": "https://github.com/yunshuangqwq/mccaoyuantxwiki/tree/main/docs",
       "label": "编辑此页"
+    },
+    "chapter-fold": {},
+    "-sharing": {},
+    "emphasize": {},
+    "back-to-top-button": {},
+    "flexible-alerts": {
+      "labels": {
+        "tip": "提示",
+        "info": "信息",
+        "warning": "警告",
+        "danger": "危险"
+      }
     }
   }
 }

@@ -1,6 +1,5 @@
-> [!NOTE|style:flat|label:|iconVisibility:hidden]
+> [!NOTE|style:flat|label:2|iconVisibility:hidden]
 1
-
 
 - 这段文本是 {% em %}高亮的！{% endem %}
 - 这段文本是 {% em %}包含**Markdown**语法高亮的！{% endem %}

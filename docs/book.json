@@ -2,7 +2,6 @@
   "title": "MC草原探险服帮助文档",
   "language": "zh-hans",
   "plugins": [
-    "-lunr",
     "-search",
     "search-pro",
     "chapter-fold",

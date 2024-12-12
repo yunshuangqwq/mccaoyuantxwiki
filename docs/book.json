@@ -35,10 +35,10 @@
     "chapter-fold": {},
     "-sharing": {},
     "emphasize": {},
-    "back-to-top-button": {}
+    "back-to-top-button": {},
     "insert-logo": {
-        "url": "img/logo.png",
-        "style": "background: none; max-height: 30px; min-height: 30px"
-      }
+      "url": "img/logo.png",
+      "style": "background: none; max-height: 30px; min-height: 30px"
+    }
   }
 }

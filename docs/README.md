@@ -1,5 +1,5 @@
-> [!NOTE|style:flat|label:Mylable|iconVisibility:hidden]
-> "!type":`NOTE`、"style":`true`、"label":`自定义标签`、图标可见
+> [!NOTE|style:flat|iconVisibility:visible|label;标题]
+> 测试
 
 - 这段文本是 {% em %}高亮的！{% endem %}
 - 这段文本是 {% em %}包含**Markdown**语法高亮的！{% endem %}

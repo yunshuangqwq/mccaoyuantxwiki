@@ -13,7 +13,10 @@
 
 ### 提交方式
 #### 1.GitHub拉取请求（pull requests）
-0，你会用`github pull reques`，则可以不看下面说明自己提交拉取请求！<br>1，直接从项目里编辑或上传.md文件保存后点下创建对应的拉取请求等审核完或者fork一下整个文档项目改完东西点pull requests菜单New按照顺序比较选择完后创建拉取请求就行等审核完即可。
+- **[info] 0，你会用github，则可以不看下面说明自己提交拉取请求！**<br> 
+> 1，直接从项目里编辑或上传.md文件保存后点下创建对应的拉取请求等审核完或者fork一下整个文档项目改完东西点pull requests菜单New按照顺序比较选择完后创建拉取请求就行等审核完即可。
+
+- {% em % type="red" %}通过Github合并提交的文档能进入github项目的贡献者名单哦～{% endem %}
 
 #### 2.GitHub工单
 [点击前往](https://github.com/yunshuangqwq/mccaoyuantxwiki/issues/new/choose)，选择文档提交，并使用markdown语法，编辑工单内容，将您的文档文件以附件形式提交给我们审核即可
@@ -40,8 +43,11 @@
 
 ```
 
-
-
 # 文档格式
 文档格式请使用markdown格式，使用支持markdown语法的编辑器([如Vs code](https://code.visualstudio.com/))，我们暂且不支持如(x.docx、x.txt)等其他格式<br>
 - Markdown语法教程：https://markdown.com.cn/basic-syntax/
+
+# 鸣谢(赞助商、冠名商、参与编辑的玩家)：
+1. 虚位以待
+2. 虚位以待
+

@@ -16,7 +16,7 @@
 - **[info] 0，你会用github，则可以不看下面说明自己提交拉取请求！**
 > 1，直接从项目里编辑或上传.md文件保存后点下创建对应的拉取请求等审核完或者fork一下整个文档项目改完东西点pull requests菜单New按照顺序比较选择完后创建拉取请求就行等审核完即可。
 
-- {% em % type="red" %}通过Github合并提交的文档能进入github项目的贡献者名单哦～{% endem %}
+- {% em type="red" %}通过Github合并提交的文档能进入github项目的贡献者名单哦～{% endem %}
 
 #### 2.GitHub工单
 [点击前往](https://github.com/yunshuangqwq/mccaoyuantxwiki/issues/new/choose)，选择文档提交，并使用markdown语法，编辑工单内容，将您的文档文件以附件形式提交给我们审核即可

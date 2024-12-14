@@ -1,3 +1,4 @@
+info等提示的标题不支持中文也就是**[info] For info**这一段。
 信息样式 ( info )：
 > **[info] For info**
 > Use this for information messages.

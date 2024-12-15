@@ -40,7 +40,7 @@ jobs:
     - name: Commit Markdown files
       run: |
         git config --local user.email "79011008+yunshuangqwq@users.noreply.github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.name "yunshuangqwq"
         git add zhdocs/cp/*.md
         git commit -m "Add Markdown files" || echo "No changes to commit"
         git push  # 提交转换后的Markdown文件

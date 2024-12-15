@@ -35,11 +35,13 @@ jobs:
     - name: Check for Markdown files
       id: check_files
       run: |
-        if compgen -G "zhdocs/cp/*.md" > /dev/null; then
-          echo "Markdown files found."
+        md_files=()
+        while IFS= read -r file; do
+          md_files+=("$file")
+        done < <(git ls-files "zhdocs/cp/*.md" --exclude-standard)
+        if [ ${#md_files[@]} -gt 0 ]; then
           echo "files_found=true" >> $GITHUB_OUTPUT
         else
-          echo "No Markdown files found."
           echo "files_found=false" >> $GITHUB_OUTPUT
         fi
       shell: bash

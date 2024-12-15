@@ -18,10 +18,14 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install markitdown xlrd  # 安装MarkItDown和xlrd库
+        pip install markitdown  # 安装MarkItDown库
         sudo apt-get update
         sudo apt-get install -y ffmpeg  # 安装ffmpeg
       shell: bash
+
+    - name: Create output directory
+      run: |
+        mkdir -p zhdocs/cp  # 创建输出目录，如果不存在
 
     - name: Run conversion script
       run: |
@@ -33,15 +37,15 @@ jobs:
       run: |
         if compgen -G "zhdocs/cp/*.md" > /dev/null; then
           echo "Markdown files found."
-          echo "::set-output name=files_found::true"
+          echo "files_found=true" >> $GITHUB_OUTPUT
         else
           echo "No Markdown files found."
-          echo "::set-output name=files_found::false"
+          echo "files_found=false" >> $GITHUB_OUTPUT
         fi
       shell: bash
 
     - name: Commit Markdown files
-      if: steps.check_files.outputs.files_found == 'true'
+      if: ${{ fromJSON(steps.check_files.outputs.files_found) }}
       run: |
         git config --local user.email "79011008+yunshuangqwq@users.noreply.github.com"
         git config --local user.name "yunshuangqwq"

@@ -7,7 +7,7 @@ markitdown = MarkItDown()
 output_dir = 'zhdocs/cp'
 
 # 使用subprocess来执行find命令
-files = subprocess.check_output(['find', 'zhdocs', '-name', '*.docx', '-o', '-name', '*.pptx', '-o', '-name', '*.xlsx', '-o', '-name', '*.xls']).decode('utf-8').splitlines()
+files = subprocess.check_output(['find', 'zhdocs', '-name', '*.docx', '-o', '-name', '*.pptx', '-o', '-name', '*.xlsx', '-o', '-name'
 
 # 遍历找到的文件并转换
 for file in files:

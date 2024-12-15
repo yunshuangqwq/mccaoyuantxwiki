@@ -1,0 +1,46 @@
+name: Convert Office Files to md Markdown
+
+on:
+  workflow_dispatch:  # 允许手动触发工作流
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # 运行环境
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3  # 检出代码
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'  # MarkItDown需要Python 3.10或更高版本
+
+    - name: Install MarkItDown
+      run: pip install markitdown  # 安装MarkItDown库
+
+    - name: Create output directory
+      run: |
+       mkdir -p zhdocs
+        mkdir -p zhdocs/cp
+
+    - name: Convert files to Markdown
+      run: |
+        from markitdown import MarkItDown
+        markitdown = MarkItDown()
+        
+        # 遍历仓库中的.docx、.pptx和.xlsx文件
+        for file in $(find zhdocs -name '*.docx' -o -name '*.pptx' -o -name '*.xlsx'):
+            output_file="${file//zhdocs\/zhdocs\/cp\/}"
+            result = markitdown.convert(file)
+            with open(output_file, 'w') as md_file:
+                md_file.write(result.text_content)
+      shell: python  # 使用Python shell执行脚本
+
+    - name: Commit Markdown files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add zhdocs/cp/*.md
+        git commit -m "Add Markdown files" || echo "No changes to commit"
+        git push  # 提交转换后的Markdown文件

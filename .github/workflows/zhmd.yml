@@ -16,22 +16,36 @@ jobs:
       with:
         python-version: '3.10'  # MarkItDown需要Python 3.10或更高版本
 
-    - name: Install MarkItDown
-      run: pip install markitdown  # 安装MarkItDown库
-
-    - name: Create output directory
+    - name: Install dependencies
       run: |
-        mkdir -p zhdocs/cp  # 创建输出目录，如果不存在
+        pip install markitdown xlrd  # 安装MarkItDown和xlrd库
+        sudo apt-get update
+        sudo apt-get install -y ffmpeg  # 安装ffmpeg
+      shell: bash
 
     - name: Run conversion script
       run: |
         python convert_to_markdown.py
-      shell: bash  # 使用bash shell执行脚本
+      shell: bash
+
+    - name: Check for Markdown files
+      id: check_files
+      run: |
+        if compgen -G "zhdocs/cp/*.md" > /dev/null; then
+          echo "Markdown files found."
+          echo "::set-output name=files_found::true"
+        else
+          echo "No Markdown files found."
+          echo "::set-output name=files_found::false"
+        fi
+      shell: bash
 
     - name: Commit Markdown files
+      if: steps.check_files.outputs.files_found == 'true'
       run: |
         git config --local user.email "79011008+yunshuangqwq@users.noreply.github.com"
         git config --local user.name "yunshuangqwq"
         git add zhdocs/cp/*.md
         git commit -m "Add Markdown files" || echo "No changes to commit"
         git push  # 提交转换后的Markdown文件
+      shell: bash

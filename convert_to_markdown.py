@@ -7,11 +7,18 @@ markitdown = MarkItDown()
 output_dir = 'zhdocs/cp'
 
 # 使用subprocess来执行find命令
-files = subprocess.check_output(['find', 'zhdocs', '-name', '*.docx', '-o', '-name', '*.pptx', '-o', '-name', '*.xlsx']).decode('utf-8').splitlines()
+files = subprocess.check_output(['find', 'zhdocs', '-name', '*.docx', '-o', '-name', '*.pptx', '-o', '-name', '*.xlsx', '-o', '-name', '*.xls']).decode('utf-8').splitlines()
 
 # 遍历找到的文件并转换
 for file in files:
+    # 检查文件扩展名是否在支持的列表中
+    if not file.endswith(('.docx', '.pptx', '.xlsx', '.xls')):
+        continue
+
     output_file = os.path.join(output_dir, os.path.relpath(file, 'zhdocs'))
-    result = markitdown.convert(file)
-    with open(output_file, 'w') as md_file:
-        md_file.write(result.text_content)
+    try:
+        result = markitdown.convert(file)
+        with open(output_file, 'w', encoding='utf-8') as md_file:
+            md_file.write(result.text_content)
+    except Exception as e:
+        print(f"Error converting {file}: {e}")

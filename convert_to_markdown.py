@@ -20,5 +20,8 @@ for file in files:
         result = markitdown.convert(file)
         with open(output_file, 'w', encoding='utf-8') as md_file:
             md_file.write(result.text_content)
+        # 删除原文件
+        os.remove(file)
+        print(f"Deleted original file: {file}")
     except Exception as e:
         print(f"Error converting {file}: {e}")

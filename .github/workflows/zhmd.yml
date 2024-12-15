@@ -17,12 +17,7 @@ jobs:
         python-version: '3.10'  # MarkItDown需要Python 3.10或更高版本
 
     - name: Install MarkItDown
-      run: pip install markitdown  # 安装MarkItDown库
-
-    - name: Create output directory
-      run: |
-        mkdir -p zhdocs
-        mkdir -p zhdocs/cp
+      run: pip install markitdown
 
     - name: Convert files to Markdown
       run: |

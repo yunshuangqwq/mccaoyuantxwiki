@@ -1,11 +1,11 @@
-name: Convert Office Markdown
+name: Convert Office Files to Markdown
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # 允许手动触发工作流
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # 运行环境
 
     steps:
     - name: Checkout code
@@ -17,20 +17,30 @@ jobs:
         python-version: '3.10'  # MarkItDown需要Python 3.10或更高版本
 
     - name: Install MarkItDown
-      run: pip install markitdown
+      run: pip install markitdown  # 安装MarkItDown库
+
+    - name: Create output directory
+      run: |
+        mkdir -p zhdocs/cp  # 创建输出目录，如果不存在
 
     - name: Convert files to Markdown
       run: |
         from markitdown import MarkItDown
+        import os
+        import subprocess
+
         markitdown = MarkItDown()
-        
-        # 遍历仓库中的.docx、.pptx和.xlsx文件
-        for file in $(find zhdocs -name '*.docx' -o -name '*.pptx' -o -name '*.xlsx'):
-            output_file="${file//zhdocs\/zhdocs\/cp\/}"
+        output_dir = 'zhdocs/cp'
+
+        # 使用subprocess来执行find命令
+        files = subprocess.check_output(['find', 'zhdocs', '-name', '*.docx', '-o', '-name', '*.pptx', '-o', '-name', '*.xlsx']).decode('utf-8').splitlines()
+
+        for file in files:
+            output_file = os.path.join(output_dir, os.path.relpath(file, 'zhdocs'))
             result = markitdown.convert(file)
             with open(output_file, 'w') as md_file:
                 md_file.write(result.text_content)
-      shell: python  # 使用Python shell执行脚本
+      shell: bash  # 使用bash shell执行脚本
 
     - name: Commit Markdown files
       run: |

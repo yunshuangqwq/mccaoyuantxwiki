@@ -9,46 +9,34 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3  # 检出代码
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.TOKEN }}  # 使用 PAT 来检出代码
 
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.10'  # MarkItDown需要Python 3.10或更高版本
+        python-version: '3.10'
 
     - name: Install dependencies
       run: |
-        pip install markitdown  # 安装MarkItDown库
+        pip install markitdown
         sudo apt-get update
-        sudo apt-get install -y ffmpeg  # 安装ffmpeg
-      shell: bash
+        sudo apt-get install -y ffmpeg
 
     - name: Create output directory
       run: |
-        mkdir -p zhdocs/cp  # 创建输出目录，如果不存在
+        mkdir -p zhdocs/cp
 
     - name: Run conversion script
       run: |
         python convert_to_markdown.py
-      shell: bash
 
-    - name: Configure Git credentials
+    - name: Commit Markdown files
       run: |
         git config --local user.email "79011008+yunshuangqwq@users.noreply.github.com"
         git config --local user.name "yunshuangqwq"
+        git add zhdocs/cp/*.md
+        git commit -m "Add Markdown files" || echo "No changes to commit"
+        git push  # 提交转换后的Markdown文件
       shell: bash
-
-    - name: Check for Markdown files
-      id: check_files
-      run: |
-        md_files=()
-        while IFS= read -r file; do
-          md_files+=("$file")
-        done < <(git ls-files "zhdocs/cp/*.md" --exclude-standard)
-        if [ ${#md_files[@]} -gt 0 ]; then
-          echo "files_found=true" >> $GITHUB_OUTPUT
-        else
-          echo "files_found=false" >> $GITHUB_OUTPUT
-        fi
-      shell: bash
-

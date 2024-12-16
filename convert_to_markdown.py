@@ -1,4 +1,4 @@
-import sys  # 导入 sys 模块
+import sys
 import os
 import subprocess
 import logging
@@ -57,6 +57,10 @@ for file in files:
 # 检查是否有任何文件被处理
 if not files:
     logging.warning("No files were processed.")
+
+# 配置 Git 用户身份
+subprocess.run(['git', 'config', '--global', 'user.email', 'your_email@example.com'], check=True)
+subprocess.run(['git', 'config', '--global', 'user.name', 'Your Name'], check=True)
 
 # 检查Git状态
 git_status = subprocess.check_output(['git', 'status']).decode('utf-8')

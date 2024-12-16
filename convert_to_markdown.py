@@ -57,3 +57,20 @@ for file in files:
 # 检查是否有任何文件被处理
 if not files:
     logging.warning("No files were processed.")
+
+# ...之前的脚本内容...
+
+# 配置 Git 用户身份
+git_email = "79011008+yunshuangqwq@users.noreply.github.com"
+git_name = "yunshuangqwq"
+subprocess.run(['git', 'config', 'user.email', git_email], check=True)
+subprocess.run(['git', 'config', 'user.name', git_name], check=True)
+
+# 添加所有更改到Git暂存区
+subprocess.run(['git', 'add', '.'], check=True)
+
+# 提交更改
+subprocess.run(['git', 'commit', '-m', 'Commit Markdown files and remove originals'], check=True)
+
+# 推送更改到远程仓库
+subprocess.run(['git', 'push'], check=True)

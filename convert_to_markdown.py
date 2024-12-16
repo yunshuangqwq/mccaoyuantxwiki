@@ -1,7 +1,8 @@
-from markitdown import MarkItDown
+import sys  # 导入 sys 模块
 import os
 import subprocess
 import logging
+from markitdown import MarkItDown
 
 # 配置日志记录，输出到控制台
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', stream=sys.stdout)

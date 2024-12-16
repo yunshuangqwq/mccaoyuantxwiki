@@ -55,3 +55,7 @@ jobs:
         git commit -m "Add Markdown files" || echo "No changes to commit"
         git push  # 提交转换后的Markdown文件
       shell: bash
+
+    env:
+      GITHUB_EMAIL: ${{ secrets.GITHUB_EMAIL }}
+      GITHUB_NAME: ${{ secrets.GITHUB_NAME }}

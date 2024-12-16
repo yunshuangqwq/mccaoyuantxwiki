@@ -4,7 +4,7 @@ import subprocess
 import logging
 from markitdown import MarkItDown
 
-# 配置日志记录，输出到控制台
+# 设置日志记录，输出到控制台
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', stream=sys.stdout)
 
 # 初始化MarkItDown
@@ -57,21 +57,3 @@ for file in files:
 # 检查是否有任何文件被处理
 if not files:
     logging.warning("No files were processed.")
-
-# 配置 Git 用户身份
-git_email = os.environ.get('EMAIL')  # 从环境变量中获取 GitHub 邮箱
-git_name = os.environ.get('NAME')  # 从环境变量中获取 GitHub 名称
-git_repo = os.environ.get('REPO')  # 从环境变量中获取 GitHub 仓库
-
-# 设置 Git 用户名和邮箱
-subprocess.run(['git', 'config', 'user.email', email], check=True)
-subprocess.run(['git', 'config', 'user.name', name], check=True)
-
-# 添加所有更改到Git暂存区
-subprocess.run(['git', 'add', '.'], check=True)
-
-# 提交更改
-subprocess.run(['git', 'commit', '-m', 'Commit Markdown files and remove originals'], check=True)
-
-# 推送更改到远程仓库
-subprocess.run(['git', 'push'], check=True)

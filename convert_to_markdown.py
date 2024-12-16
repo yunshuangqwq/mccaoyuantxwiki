@@ -8,6 +8,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 # 初始化MarkItDown
 markitdown = MarkItDown()
+input_dir = 'zhdocs'
 output_dir = 'zhdocs/cp'
 
 # 确保输出目录存在
@@ -16,7 +17,7 @@ if not os.path.exists(output_dir):
     logging.info("Created output directory: %s", output_dir)
 
 # 使用subprocess来执行find命令
-files = subprocess.check_output(['find', 'zhdocs', '-name', '*.docx', '-o', '-name', '*.pptx', '-o', '-name', '*.xlsx']).decode('utf-8').splitlines()
+files = subprocess.check_output(['find', input_dir, '-name', '*.docx', '-o', '-name', '*.pptx', '-o', '-name', '*.xlsx']).decode('utf-8').splitlines()
 
 logging.info("Found %d files to process.", len(files))
 
@@ -29,21 +30,23 @@ for file in files:
         logging.warning("Skipping unsupported file type: %s", file)
         continue
 
-    output_file = os.path.join(output_dir, os.path.relpath(file, 'zhdocs'))
+    output_file_path = os.path.join(output_dir, os.path.relpath(file, input_dir))
+    output_file_name = os.path.splitext(output_file_path)[0] + '.md'
+    
     try:
         result = markitdown.convert(file)
         logging.info("Successfully converted file: %s", file)
         
-        with open(output_file, 'w', encoding='utf-8') as md_file:
+        with open(output_file_name, 'w', encoding='utf-8') as md_file:
             md_file.write(result.text_content)
-            logging.info("Successfully wrote Markdown content to: %s", output_file)
+            logging.info("Successfully wrote Markdown content to: %s", output_file_name)
         
         # 删除原文件
         os.remove(file)
         logging.info("Deleted original file: %s", file)
     except Exception as e:
-        logging.error("Error converting file: %s, Error: %s", file, e)
+        logging.error("Error converting or deleting file: %s, Error: %s", file, e)
 
 # 检查是否有任何文件被处理
-if len(files) == 0 or all(file.endswith(('.docx', '.pptx', '.xlsx')) for file in files) == False:
+if len(files) == 0 or all(not file.endswith(('.docx', '.pptx', '.xlsx')) for file in files):
     logging.warning("No supported files were processed or all files were skipped.")

@@ -64,8 +64,8 @@ git_name = os.environ.get('NAME')  # 从环境变量中获取 GitHub 名称
 git_repo = os.environ.get('REPO')  # 从环境变量中获取 GitHub 仓库
 
 # 设置 Git 用户名和邮箱
-subprocess.run(['git', 'config', 'user.email', git_email], check=True)
-subprocess.run(['git', 'config', 'user.name', git_name], check=True)
+subprocess.run(['git', 'config', 'user.email', email], check=True)
+subprocess.run(['git', 'config', 'user.name', name], check=True)
 
 # 添加所有更改到Git暂存区
 subprocess.run(['git', 'add', '.'], check=True)

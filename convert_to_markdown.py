@@ -59,8 +59,8 @@ if not files:
     logging.warning("No files were processed.")
 
 # 配置 Git 用户身份
-subprocess.run(['git', 'config', '--global', 'user.email', 'your_email@example.com'], check=True)
-subprocess.run(['git', 'config', '--global', 'user.name', 'Your Name'], check=True)
+subprocess.run(['git', 'config', '--global', 'user.email', '79011008+yunshuangqwq@users.noreply.github.com'], check=True)
+subprocess.run(['git', 'config', '--global', 'user.name', 'yunshuangqwq'], check=True)
 
 # 检查Git状态
 git_status = subprocess.check_output(['git', 'status']).decode('utf-8')

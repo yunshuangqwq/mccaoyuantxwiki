@@ -1,42 +1,66 @@
-name: Convert Office Files to Markdown
+import sys
+import os
+import subprocess
+import logging
+from markitdown import MarkItDown
 
-on:
-  workflow_dispatch:  # 允许手动触发工作流
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', stream=sys.stdout)
 
-jobs:
-  build:
-    runs-on: ubuntu-latest  # 运行环境
+markitdown = MarkItDown()
+input_dir = 'zhdocs'
+output_dir = 'zhdocs/cp'
 
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}  # 使用 PAT 来检出代码
+if not os.path.exists(output_dir):
+    os.makedirs(output_dir)
+    logging.info("Created output directory: %s", output_dir)
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+try:
+    files = subprocess.check_output(['find', input_dir, '-name', '*.docx', '-o', '-name', '*.pptx', '-o', '-name', '*.xlsx']).decode('utf-8').splitlines()
+except Exception as e:
+    logging.error("Failed to find files: %s", e)
+    files = []
 
-    - name: Install dependencies
-      run: |
-        pip install markitdown
-        sudo apt-get update
-        sudo apt-get install -y ffmpeg
+logging.info("Found %d files to process.", len(files))
 
-    - name: Create output directory
-      run: |
-        mkdir -p zhdocs/cp
+# 遍历找到的文件并转换
+for file in files:
+    logging.debug("Processing file: %s", file)
 
-    - name: Run conversion script
-      run: |
-        python convert_to_markdown.py
+    if not file.endswith(('.docx', '.pptx', '.xlsx')):
+        logging.warning("Skipping unsupported file type: %s", file)
+        continue
 
-    - name: Commit Markdown files
-      run: |
-        git config --local user.email "79011008+yunshuangqwq@users.noreply.github.com"
-        git config --local user.name "yunshuangqwq"
-        git add zhdocs/cp/*.md
-        git commit -m "Add Markdown files" || echo "No changes to commit"
-        git push  # 提交转换后的Markdown文件
-      shell: bash
+    try:
+        result = markitdown.convert(file)
+        logging.info("Successfully converted file: %s", file)
+
+        output_file_path = os.path.join(output_dir, os.path.splitext(os.path.relpath(file, input_dir))[0] + '.md')
+
+        with open(output_file_path, 'w', encoding='utf-8') as md_file:
+            md_file.write(result.text_content)
+            logging.info("Successfully wrote Markdown content to: %s", output_file_path)
+
+        # 删除原文件
+        os.remove(file)
+        logging.info("Deleted original file: %s", file)
+    except Exception as e:
+        logging.error("Error processing file: %s, Error: %s", file, e)
+
+# 检查是否有任何文件被处理
+if not files:
+    logging.warning("No files were processed.")
+
+# 配置 Git 用户身份
+git_email = "79011008+yunshuangqwq@users.noreply.github.com"
+git_name = "yunshuangqwq"
+subprocess.run(['git', 'config', 'user.email', git_email], check=True)
+subprocess.run(['git', 'config', 'user.name', git_name], check=True)
+
+# 添加所有更改到Git暂存区
+subprocess.run(['git', 'add', '.'], check=True)
+
+# 提交更改
+subprocess.run(['git', 'commit', '-m', 'Commit Markdown files and remove originals'], check=True)
+
+# 推送更改到仓库
+subprocess.run(['git', 'push'], check=True)

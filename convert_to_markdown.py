@@ -57,3 +57,19 @@ for file in files:
 # 检查是否有任何文件被处理
 if not files:
     logging.warning("No files were processed.")
+
+# 检查Git状态
+git_status = subprocess.check_output(['git', 'status']).decode('utf-8')
+logging.info("Git status:\n%s", git_status)
+
+# 添加所有更改到Git暂存区
+subprocess.run(['git', 'add', '.'], check=True)
+logging.info("Added all changes to Git staging area.")
+
+# 提交更改
+subprocess.run(['git', 'commit', '-m', 'Commit Markdown files and remove originals'], check=True)
+logging.info("Committed changes.")
+
+# 推送更改到远程仓库
+subprocess.run(['git', 'push'], check=True)
+logging.info("Pushed changes to remote repository.")

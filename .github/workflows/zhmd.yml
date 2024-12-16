@@ -57,5 +57,5 @@ jobs:
       shell: bash
 
     env:
-      GITHUB_EMAIL: ${{ secrets.GITHUB_EMAIL }}
-      GITHUB_NAME: ${{ secrets.GITHUB_NAME }}
+      GITHUB_EMAIL: ${{ secrets.EMAIL }}
+      GITHUB_NAME: ${{ secrets.NAME }}

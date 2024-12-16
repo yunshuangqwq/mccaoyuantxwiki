@@ -59,9 +59,9 @@ if not files:
     logging.warning("No files were processed.")
 
 # 配置 Git 用户身份
-git_email = os.environ.get('GITHUB_EMAIL')  # 从环境变量中获取 GitHub 邮箱
-git_name = os.environ.get('GITHUB_NAME')  # 从环境变量中获取 GitHub 名称
-git_repo = os.environ.get('GITHUB_REPO')  # 从环境变量中获取 GitHub 仓库
+git_email = os.environ.get('EMAIL')  # 从环境变量中获取 GitHub 邮箱
+git_name = os.environ.get('NAME')  # 从环境变量中获取 GitHub 名称
+git_repo = os.environ.get('REPO')  # 从环境变量中获取 GitHub 仓库
 
 # 设置 Git 用户名和邮箱
 subprocess.run(['git', 'config', 'user.email', git_email], check=True)

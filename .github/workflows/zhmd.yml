@@ -32,6 +32,12 @@ jobs:
         python convert_to_markdown.py
       shell: bash
 
+    - name: Configure Git credentials
+      run: |
+        git config --local user.email "79011008+yunshuangqwq@users.noreply.github.com"
+        git config --local user.name "yunshuangqwq"
+      shell: bash
+
     - name: Check for Markdown files
       id: check_files
       run: |
@@ -49,13 +55,7 @@ jobs:
     - name: Commit Markdown files
       if: ${{ fromJSON(steps.check_files.outputs.files_found) }}
       run: |
-        git config --local user.email "79011008+yunshuangqwq@users.noreply.github.com"
-        git config --local user.name "yunshuangqwq"
         git add zhdocs/cp/*.md
         git commit -m "Add Markdown files" || echo "No changes to commit"
         git push  # 提交转换后的Markdown文件
       shell: bash
-
-    env:
-      GITHUB_EMAIL: ${{ secrets.EMAIL }}
-      GITHUB_NAME: ${{ secrets.NAME }}

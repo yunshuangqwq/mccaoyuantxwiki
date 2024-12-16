@@ -52,10 +52,3 @@ jobs:
         fi
       shell: bash
 
-    - name: Commit Markdown files
-      if: ${{ fromJSON(steps.check_files.outputs.files_found) }}
-      run: |
-        git add zhdocs/cp/*.md
-        git commit -m "Add Markdown files" || echo "No changes to commit"
-        git push  # 提交转换后的Markdown文件
-      shell: bash

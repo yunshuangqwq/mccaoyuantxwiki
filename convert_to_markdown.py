@@ -59,21 +59,19 @@ if not files:
     logging.warning("No files were processed.")
 
 # 配置 Git 用户身份
-subprocess.run(['git', 'config', '--global', 'user.email', '79011008+yunshuangqwq@users.noreply.github.com'], check=True)
-subprocess.run(['git', 'config', '--global', 'user.name', 'yunshuangqwq'], check=True)
+git_email = os.environ.get('GITHUB_EMAIL')  # 从环境变量中获取 GitHub 邮箱
+git_name = os.environ.get('GITHUB_NAME')  # 从环境变量中获取 GitHub 名称
+git_repo = os.environ.get('GITHUB_REPO')  # 从环境变量中获取 GitHub 仓库
 
-# 检查Git状态
-git_status = subprocess.check_output(['git', 'status']).decode('utf-8')
-logging.info("Git status:\n%s", git_status)
+# 设置 Git 用户名和邮箱
+subprocess.run(['git', 'config', 'user.email', git_email], check=True)
+subprocess.run(['git', 'config', 'user.name', git_name], check=True)
 
 # 添加所有更改到Git暂存区
 subprocess.run(['git', 'add', '.'], check=True)
-logging.info("Added all changes to Git staging area.")
 
 # 提交更改
 subprocess.run(['git', 'commit', '-m', 'Commit Markdown files and remove originals'], check=True)
-logging.info("Committed changes.")
 
 # 推送更改到远程仓库
 subprocess.run(['git', 'push'], check=True)
-logging.info("Pushed changes to remote repository.")

@@ -6,4 +6,4 @@ Bot Created Via: https://github.com/gshtwy/nfd
 - ==================
 - ☯️介绍：这个是一个私信转发机器人 
 - 🌐资源搜索：https://t.me/soso?start=usecode_7298577145
-- 🌐机器人项目地址：https://github.com/gshtwy/nfd
+- 🌐项目地址：https://github.com/gshtwy/nfd

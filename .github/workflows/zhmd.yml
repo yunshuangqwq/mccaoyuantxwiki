@@ -32,7 +32,7 @@ jobs:
       run: |
         python convert_to_markdown.py
 
-#以下需要配置git邮箱和用户名（由于github有隐藏邮箱这个东西需要你自行判断）
+# 以下需要配置git邮箱和用户名（由于github有隐藏邮箱这个东西需要你自行判断）
     - name: Commit Markdown files
       run: |
         git config --local user.email "79011008+yunshuangqwq@users.noreply.github.com"

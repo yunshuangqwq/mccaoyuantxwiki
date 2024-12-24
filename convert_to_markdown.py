@@ -6,10 +6,12 @@ from markitdown import MarkItDown
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', stream=sys.stdout)
 
+# 输出文件夹和文件所在文件夹（输出为cp文件夹）
 markitdown = MarkItDown()
 input_dir = 'zhdocs'
 output_dir = 'zhdocs/cp'
 
+# 文件后缀（py脚本只会转换指定的后缀，你也可以删掉或增加删掉时候请把下面的变量也删掉不然会报错）
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
     logging.info("Created output directory: %s", output_dir)

@@ -52,7 +52,7 @@ for file in files:
 if not files:
     logging.warning("No files were processed.")
 
-# 配置 Git 用户身份
+# 配置 Git 用户身份（再设置一次）
 git_email = "79011008+yunshuangqwq@users.noreply.github.com"
 git_name = "yunshuangqwq"
 subprocess.run(['git', 'config', 'user.email', git_email], check=True)

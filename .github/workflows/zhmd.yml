@@ -1,17 +1,17 @@
 name: Convert Office Files to Markdown
 
 on:
-  workflow_dispatch:  # 允许手动触发工作流
+  workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # 运行环境
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
       with:
-        token: ${{ secrets.TOKEN }}  # 使用 PAT 来检出代码
+        token: ${{ secrets.TOKEN }}  # 必须
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -32,11 +32,12 @@ jobs:
       run: |
         python convert_to_markdown.py
 
+#以下需要配置git邮箱和用户名（由于github有隐藏邮箱这个东西需要你自行判断）
     - name: Commit Markdown files
       run: |
         git config --local user.email "79011008+yunshuangqwq@users.noreply.github.com"
         git config --local user.name "yunshuangqwq"
         git add zhdocs/cp/*.md
         git commit -m "Add Markdown files" || echo "No changes to commit"
-        git push  # 提交转换后的Markdown文件
+        git push
       shell: bash

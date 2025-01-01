@@ -75,4 +75,4 @@
     </td></tr>
 </table>
 <!-- readme: contributors -end -->
-最后祝各位万事如意，心想事成！.
+最后祝各位万事如意，心想事成！

@@ -12,6 +12,6 @@
 | 玩家名字 | 赞助金额 | 日期 | 截图 |
 | :----: | :----: | :----: | :----: |
 | 山治 |  1 | 2025年1月2日 | ![](https://img.ypshidifu.cn/LightPicture/2025/01/cd6257233cca907c.jpg)
-| 风云 | 1 | 2025年1月2日 | ![]([#](https://img.ypshidifu.cn/LightPicture/2025/01/92f561358db10bbb.jpg))
-| 山治 | 2 | 2024年12月7日 | ![]([#](https://img.ypshidifu.cn/LightPicture/2025/01/0a517b98271f02b3.jpg))
+| 风云 | 1 | 2025年1月2日 | ![](https://img.ypshidifu.cn/LightPicture/2025/01/92f561358db10bbb.jpg)
+| 山治 | 2 | 2024年12月7日 | ![](https://img.ypshidifu.cn/LightPicture/2025/01/0a517b98271f02b3.jpg)
 | 虚位以待 | 0 | 虚位以待 | 虚位以待 |

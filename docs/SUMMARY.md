@@ -4,6 +4,7 @@
 * [用户协议](wikis/player.md)
 * [前言](README.md)
 * [手机app](wikis/tags.md)
+* [赞助名单](wikis/sponsor.md)
 * [奖励领取](wikis/reward.md)
 * [注册和登陆](wikis/login.md)
 * [领地保护](wikis/dom.md)
@@ -16,7 +17,7 @@
 * [小黑塔使用](wikis/end.md)
 * [袭击塔的使用](wikis/bad.md)
 * [指令帮助](wikis/plays.md)
-* [OP申请](wikis/op.md)
+* [OP申请](#)
 * [友链相关](wikis/server.md)
-* [提交工单](wikis/issues.md)
+* [提交工单](wikis/lssues.md)
 

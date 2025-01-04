@@ -56,14 +56,14 @@
         <a href="https://github.com/yunshuangqwq">
             <img src="https://avatars.githubusercontent.com/u/79011008?v=4" width="90;" alt="yunshuangqwq"/>
             <br />
-            <sub><b>云霜</b></sub>
+            <sub><b>error</b></b></sub>
         </a>
     </td>
     <td align="center">
         <a href="https://github.com/ypsdf1">
             <img src="https://avatars.githubusercontent.com/u/193349961?v=4" width="90;" alt="ypsdf1"/>
             <br />
-            <sub><b>Null</b></sub>
+            <sub><b>ypsdf1</b></sub>
         </a>
     </td>
     <td align="center">

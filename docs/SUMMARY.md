@@ -20,5 +20,5 @@
 * [OP申请](#)
 * [友链相关](wikis/server.md)
 * [工单求助](https://github.com/yunshuangqwq/mccaoyuantxwiki/issues/new/choose)
-* [加速GitHub](./wikis/github.md)
+* [加速GitHub](wikis/github.md)
 

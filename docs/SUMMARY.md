@@ -18,5 +18,5 @@
 * [袭击塔的使用](wikis/bad.md)
 * [指令帮助](wikis/plays.md)
 * [友链相关](wikis/server.md)
-* [提交工单](https://github.com/yunshuangqwq/mccaoyuantxwiki/issues/new/choose)
+* [工单求助](https://github.com/yunshuangqwq/mccaoyuantxwiki/issues/new/choose)
 

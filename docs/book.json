@@ -12,8 +12,7 @@
     "back-to-top-button",
     "alerts",
     "popup",
-    "github",
-    "sitemap"
+    "github"
   ],
   "pluginsConfig": {
     "sidebar-style": {
@@ -33,9 +32,6 @@
     },
     "chapter-fold": {},
     "emphasize": {},
-    "back-to-top-button": {},
-    "sitemap": {
-      "hostname": "https://www.ypshidifu.cn"
-    }
+    "back-to-top-button": {}
   }
 }

@@ -17,7 +17,7 @@
 * [小黑塔使用](wikis/end.md)
 * [袭击塔的使用](wikis/bad.md)
 * [指令帮助](wikis/plays.md)
-* [OP申请](#)
+// * [OP申请](#)
 * [友链相关](wikis/server.md)
 * [工单求助](https://github.com/yunshuangqwq/mccaoyuantxwiki/issues/new/choose)
 * [加速GitHub](wikis/github.md)

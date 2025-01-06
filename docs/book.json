@@ -13,7 +13,7 @@
     "alerts",
     "popup",
     "github",
-    "sitemap-general"
+    "sitemap"
   ],
   "pluginsConfig": {
     "sidebar-style": {
@@ -34,8 +34,8 @@
     "chapter-fold": {},
     "emphasize": {},
     "back-to-top-button": {},
-    "sitemap-general": {
-      "prefix": "https://www.ypshidifu.cn"
+    "sitemap": {
+      "hostname": "https://www.ypshidifu.cn"
     }
   }
 }

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC草原探险群页</title>
+    <style>
+        /* 基础页面样式 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex; /* 设置为水平布局 */
+            justify-content: center; /* 在主轴上居中对齐 */
+            align-items: center; /* 在交叉轴上居中对齐 */
+            text-align: center;
+            flex-wrap: wrap; /* 允许换行布局 */
+        }
+
+        /* 按钮样式 */
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        button img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* 弹窗样式 */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            z-index: 1000;
+        }
+
+        .modal button {
+            margin: 5px 0;
+            width: 100%;
+        }
+
+        .modal img {
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        /* 模态框背景 */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 按钮1：点击复制群号并跳转至QQ群 -->
+        <button id="button1" onclick="if (!window.__cfRLUnblockHandlers) return false; copyTextAndOpen('971338900', 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ZrfRMJpPmuhjW7wr5qQS92NWrp3gmkZr&authKey=GFwm3frn0l3ezUOypBHhH6OD%2BhUVUKvDy%2Bf7w45mtmSunh660RzcRrT9qtP9TiI0&noverify=0&group_code=971338900')" data-cf-modified-42b6317a8e6ccf294cead235-="">
+            <img src="./img/tencentqq~1.jpg" alt="QQ图标">QQ群971338900
+        </button>
+
+        <!-- 按钮2：微信群提示并跳转 -->
+        <button id="button2" onclick="if (!window.__cfRLUnblockHandlers) return false; showWeChatTipAndRedirect('wx.html')" data-cf-modified-42b6317a8e6ccf294cead235-="">
+            <img src="./img/tencentwechat~1.jpg" alt="微信图标">微信群
+        </button>
+
+        <!-- 按钮3：复制并跳转discord -->
+        <button id="button3" onclick="if (!window.__cfRLUnblockHandlers) return false; copyTextAndOpen('https://discord.gg/Fdx7hr6BYS', 'https://discord.gg/Fdx7hr6BYS')" data-cf-modified-42b6317a8e6ccf294cead235-="">
+            <img src="./img/discord~1.jpg" alt="Discord图标">加入discord
+        </button>
+
+        <!-- 按钮4：弹窗选择Telegram加入方式 -->
+        <button id="button5" onclick="if (!window.__cfRLUnblockHandlers) return false; openTelegramModal()" data-cf-modified-42b6317a8e6ccf294cead235-="">
+            <img src="./img/telegram~1.jpg" alt="Telegram图标">加入Telegram
+        </button>
+
+        <!-- 按钮5：直接跳转至付费充值页面 -->
+        <button id="button4" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectToPayment()" data-cf-modified-42b6317a8e6ccf294cead235-="">
+            <img src="./img/money~1.jpg" alt="付费图标">付费充值
+        </button>
+    </div>
+
+    <!-- Telegram弹窗 -->
+    <div id="telegramModal" class="modal">
+        <p>请选择加入Telegram的方式：</p>
+        <button onclick="if (!window.__cfRLUnblockHandlers) return false; toggleTelegramQRCode()" data-cf-modified-42b6317a8e6ccf294cead235-="">二维码加入</button>
+        <img id="telegramQR" src="./img/telegram.jpg" alt="Telegram QR Code" style="display: none;">
+        <button onclick="if (!window.__cfRLUnblockHandlers) return false; copyTelegramLink()" data-cf-modified-42b6317a8e6ccf294cead235-="">链接加入</button>
+        <button onclick="if (!window.__cfRLUnblockHandlers) return false; closeTelegramModal()" data-cf-modified-42b6317a8e6ccf294cead235-="">关闭</button>
+    </div>
+    <div id="modalOverlay" class="modal-overlay" onclick="if (!window.__cfRLUnblockHandlers) return false; closeTelegramModal()" data-cf-modified-42b6317a8e6ccf294cead235-=""></div>
+
+    <script type="42b6317a8e6ccf294cead235-text/javascript">
+        // 复制文本的函数，并在按钮1/3点击时跳转
+        function copyTextAndOpen(text, url) {
+            const tempInput = document.createElement("input");
+            tempInput.style.position = "absolute";
+            tempInput.style.left = "-9999px";
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999); // 兼容移动设备
+            const success = document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            if (text === "971338900") {
+                alert(success 
+                    ? "已将群号复制到剪贴板，如若复制失败，请手动填写群号 971338900。" 
+                    : "复制失败，请手动填写群号 971338900。");
+            } else {
+                alert(success 
+                    ? "已将邀请链接复制到剪贴板，即将自动跳转。若未跳转，请手动复制链接 " + text 
+                    : "复制失败，请手动复制链接 " + text);
+            }
+            setTimeout(() => {
+                window.open(url, '_blank');
+            }, 500); // 延时 500 毫秒后打开
+        }
+
+        // 按钮2的提示函数并跳转
+        function showWeChatTipAndRedirect(url) {
+            alert("您无需担心无企业微信，该二维码同时支持普通微信扫描。\n\n加入群聊后请及时修改昵称，以便更好地识别用户。");
+            setTimeout(() => {
+                window.open(url, '_blank'); // 新标签页打开
+            }, 500); // 可设置延时，提升用户体验
+        }
+
+        // 按钮4直接跳转函数
+        function redirectToPayment() {
+            window.open("cz.html", '_blank'); // 新标签页打开
+        }
+
+        // 打开Telegram弹窗
+        function openTelegramModal() {
+            document.getElementById("telegramModal").style.display = "block";
+            document.getElementById("modalOverlay").style.display = "block";
+        }
+
+        // 关闭Telegram弹窗
+        function closeTelegramModal() {
+            document.getElementById("telegramModal").style.display = "none";
+            document.getElementById("modalOverlay").style.display = "none";
+        }
+
+        // 切换Telegram二维码显示与隐藏
+        function toggleTelegramQRCode() {
+            const qrCode = document.getElementById("telegramQR");
+            qrCode.style.display = qrCode.style.display === "none" ? "block" : "none";
+        }
+
+        // 复制Telegram链接并跳转
+        function copyTelegramLink() {
+            copyTextAndOpen('https://t.me/mccaoyantx', 'https://t.me/mccaoyantx');
+        }
+    </script>
+
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="42b6317a8e6ccf294cead235-|49" defer></script></body>
+</html>

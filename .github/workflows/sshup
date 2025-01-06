@@ -1,0 +1,36 @@
+name: SFTP Download and Archive
+
+on:
+  workflow_dispatch: # 手动触发工作流
+
+jobs:
+  download-and-archive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install SFTP client
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openssh-client
+
+      - name: Download files via SFTP
+        run: |
+          mkdir -p backup
+          sshpass -p '5TjwDbrr648kXLcC' sftp -oPort=36369 -oBatchMode=no -b - 43.153.203.46 << !
+            lcd backup
+            get -r /www/backup .
+            bye
+          !
+
+      - name: Archive files
+        run: |
+          tar -czvf backup.tar.gz backup
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: backup-archive
+          path: backup.tar.gz

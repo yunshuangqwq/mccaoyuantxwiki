@@ -12,7 +12,8 @@
     "back-to-top-button",
     "alerts",
     "popup",
-    "github"
+    "github",
+    "sitemap-general"
   ],
   "pluginsConfig": {
     "sidebar-style": {
@@ -31,8 +32,10 @@
       "label": "编辑此页"
     },
     "chapter-fold": {},
-    "-sharing": {},
     "emphasize": {},
-    "back-to-top-button": {}
+    "back-to-top-button": {},
+    "sitemap-general": {
+      "prefix": "https://www.ypshidifu.cn"
+    }
   }
 }

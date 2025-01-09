@@ -1,6 +1,6 @@
 # menu
 
-* [群聊列表](https://play.ypshidifu.cn/qun/index.html)
+* [群聊列表](https://www.ypshidifu.cn/html/qun.html)
 * [官网](https://play.ypshidifu.cn/)
 * [用户协议](wikis/player.md)
 * [前言](README.md)
@@ -8,6 +8,7 @@
 * [赞助名单](wikis/sponsor.md)
 * [奖励领取](wikis/reward.md)
 * [注册和登陆](wikis/login.md)
+* [冻结的额外说明](wikis/ice.md)
 * [领地保护](wikis/dom.md)
 * [地图画](wikis/map.md)
 * [皮肤更新](wikis/skin.md)

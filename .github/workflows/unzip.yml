@@ -1,7 +1,7 @@
 name: Unzip and Push Workflow
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # 手动触发工作流
 
 jobs:
   unzip-and-push:
@@ -47,10 +47,10 @@ jobs:
 
     - name: Push changes to remote repository
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PERSONAL_ACCESS_TOKEN: ${{ secrets.TOKEN }}
       run: |
-        git config --global user.name "yunshuangqwq"
-        git config --global user.email "79011008+yunshuangqwq@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add .
         git commit -m "Unzip files and push changes"
-        git push origin main
+        git push https://github-actions[bot]:$PERSONAL_ACCESS_TOKEN@github.com/yunshuangqwq/mccaoyuantxwiki.git main

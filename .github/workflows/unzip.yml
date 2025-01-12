@@ -1,0 +1,56 @@
+name: Unzip and Push Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  unzip-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install unzip and unrar
+      run: sudo apt-get install unzip unrar
+
+    - name: Install 7z
+      run: sudo apt-get install p7zip-full
+
+    - name: Unzip and organize files
+      run: |
+        mkdir -p unzip/cp
+        cd unzip
+        for file in *.{zip,7z,rar}; do
+          if [ -f "$file" ]; then
+            filename="${file%.*}"
+            mkdir -p "cp/$filename"
+            case "$file" in
+              *.zip)
+                unzip -o "$file" -d "cp/$filename"
+                ;;
+              *.7z)
+                7z x "$file" -o"cp/$filename"
+                ;;
+              *.rar)
+                unrar x "$file" "cp/$filename"
+                ;;
+            esac
+            if [ $? -eq 0 ]; then
+              echo "$file extracted successfully"
+              rm "$file"
+            else
+              echo "Failed to extract $file"
+            fi
+          fi
+        done
+
+    - name: Push changes to remote repository
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Unzip files and push changes"
+        git push origin main

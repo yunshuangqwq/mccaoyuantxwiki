@@ -47,7 +47,7 @@ jobs:
 
     - name: Push changes to remote repository
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
       run: |
         git config --global user.name "yunshuangqwq"
         git config --global user.email "79011008+yunshuangqwq@users.noreply.github.com"

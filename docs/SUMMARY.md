@@ -9,7 +9,7 @@
 * [奖励领取](wikis/reward.md)
 * [注册和登陆](wikis/login.md)
 * [冻结的额外说明](wikis/ice.md)
-* [作弊行为定义和处理方式](wikis/cheaters.md)
+* [作弊行为定义和处理方式](wikis/Cheaters.md)
 * [领地保护](wikis/dom.md)
 * [地图画](wikis/map.md)
 * [皮肤更新](wikis/skin.md)

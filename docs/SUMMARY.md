@@ -22,6 +22,6 @@
 * [指令帮助](wikis/plays.md)
 * [友链相关](wikis/server.md)
 * [工单求助](https://github.com/yunshuangqwq/mccaoyuantxwiki/issues?q=is%3Aissue)
-* [如何获得游戏币](wikis\ccurrency.md)
+* [如何获得游戏币](wikis/ccurrency.md)
 * [加速GitHub](wikis/github.md)
 

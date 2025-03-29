@@ -9,7 +9,7 @@
 * [奖励领取](wikis/reward.md)
 * [注册和登陆](wikis/login.md)
 * [冻结的额外说明](wikis/ice.md)
-* [作弊行为定义和处理方式](wikis/Cheaters.md)
+* [作弊行为定义和处理方式](wikis/cheaters.md)
 * [领地保护](wikis/dom.md)
 * [地图画](wikis/map.md)
 * [皮肤更新](wikis/skin.md)
@@ -22,5 +22,6 @@
 * [指令帮助](wikis/plays.md)
 * [友链相关](wikis/server.md)
 * [工单求助](https://github.com/yunshuangqwq/mccaoyuantxwiki/issues/new/choose)
+* [如何获得游戏币](wikis\ccurrency.md)
 * [加速GitHub](wikis/github.md)
 
